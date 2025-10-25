@@ -1,0 +1,99 @@
+{
+  "url": "https://example.com",
+  "scores": {
+    "technical": 100,
+    "ux_design": 38,
+    "seo": 50,
+    "credibility": 35,
+    "content": 85,
+    "total": 62,
+    "summary": "strong technical performance and trust signals are weak"
+  },
+  "indicators": {
+    "has_ssl": true,
+    "mobile_friendly": true,
+    "meta_description_present": false,
+    "contact_info_found": false,
+    "lighthouse_performance": null,
+    "broken_links": 0
+  },
+  "summary": "strong technical performance and trust signals are weak",
+  "measures": {
+    "meta": {
+      "title": "Example Domain",
+      "meta": {
+        "viewport": "width=device-width, initial-scale=1"
+      }
+    },
+    "canonical": null,
+    "viewport": true,
+    "css_font_families": [],
+    "raw_html_len": 513,
+    "body_text_len": 127,
+    "text_html_ratio": 0.248,
+    "heading_stats": {
+      "counts": {
+        "h1": 1,
+        "h2": 0,
+        "h3": 0,
+        "h4": 0,
+        "h5": 0,
+        "h6": 0
+      },
+      "total": 1,
+      "max_depth": 1
+    },
+    "broken_links": 0,
+    "ssl_info": {
+      "valid": true,
+      "expires": "2026-01-15T23:59:59",
+      "days_left": 82
+    },
+    "has_ssl": true,
+    "contact_info": {
+      "emails": [],
+      "phones": [],
+      "addresses": []
+    },
+    "contact_info_found": false,
+    "has_schema": false,
+    "images_with_alt_ratio": 1.0,
+    "robots_sitemap": {
+      "robots": false,
+      "sitemap": false
+    },
+    "keyword_relevance": 1.0,
+    "copyright_fresh": false,
+    "lighthouse": null,
+    "mobile_friendly": true,
+    "meta_description": false,
+    "parsed": {
+      "meta": {
+        "title": "Example Domain",
+        "meta": {
+          "viewport": "width=device-width, initial-scale=1"
+        }
+      },
+      "headings": [
+        {
+          "tag": "h1",
+          "text": "Example Domain"
+        }
+      ],
+      "body_text": "Example Domain This domain is for use in documentation examples without needing permission. Avoid use in operations. Learn more",
+      "links": [
+        {
+          "href": "https://iana.org/domains/example",
+          "url": "https://iana.org/domains/example",
+          "text": "Learn more"
+        }
+      ],
+      "images": [],
+      "css_links": [],
+      "inline_styles": [],
+      "viewport": true,
+      "canonical": null,
+      "raw_html": "<!doctype html><html lang=\"en\"><head><title>Example Domain</title><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"><style>body{background:#eee;width:60vw;margin:15vh auto;font-family:system-ui,sans-serif}h1{font-size:1.5em}div{opacity:0.8}a:link,a:visited{color:#348}</style><body><div><h1>Example Domain</h1><p>This domain is for use in documentation examples without needing permission. Avoid use in operations.<p><a href=\"https://iana.org/domains/example\">Learn more</a></div></body></html>\n"
+    }
+  }
+}

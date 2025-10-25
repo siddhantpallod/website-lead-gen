@@ -1,0 +1,576 @@
+{
+  "url": "https://biteofpower.com",
+  "scores": {
+    "technical": 98,
+    "ux_design": 58,
+    "seo": 80,
+    "credibility": 62,
+    "content": 90,
+    "total": 78,
+    "summary": "strong technical; good SEO"
+  },
+  "indicators": {
+    "has_ssl": true,
+    "mobile_friendly": true,
+    "meta_description_present": true,
+    "contact_info_found": true,
+    "lighthouse_performance": null,
+    "broken_links": 0
+  },
+  "summary": "strong technical; good SEO",
+  "measures": {
+    "meta": {
+      "title": "Bite of Power - Mediterranean-American Fusion Restaurant",
+      "meta": {
+        "viewport": "width=device-width, initial-scale=1",
+        "next-size-adjust": "",
+        "description": "Late-night Mediterranean-American fusion restaurant across from UF. Bold flavors, heartfelt effort, and flavor that packs a punch!",
+        "og:title": "Bite of Power - Mediterranean-American Fusion",
+        "og:description": "Late-night Mediterranean-American fusion across from UF. Flavor that packs a punch.",
+        "og:url": "https://biteofpower.com",
+        "og:site_name": "Bite of Power",
+        "og:locale": "en_US",
+        "og:image": "https://biteofpower.com/bop-hero.png",
+        "og:image:width": "1200",
+        "og:image:height": "630",
+        "og:image:alt": "Bite of Power",
+        "og:type": "website",
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Bite of Power - Mediterranean-American Fusion",
+        "twitter:description": "Late-night Mediterranean-American fusion across from UF.",
+        "twitter:image": "https://biteofpower.com/bop-hero.png"
+      }
+    },
+    "canonical": null,
+    "viewport": true,
+    "css_font_families": [
+      "Apple Color Emoji",
+      "League Spartan",
+      "Gagalin",
+      "monospace)",
+      "Noto Color Emoji\")",
+      "var(--default-mono-font-family",
+      "Courier New",
+      "Consolas",
+      "var(--default-font-family",
+      "SFMono-Regular",
+      "Liberation Mono",
+      "ui-monospace",
+      "Segoe UI Emoji",
+      "League Spartan Fallback",
+      "Segoe UI Symbol",
+      "var(--font-mono)",
+      "var(--font-sans)",
+      "ui-sans-serif",
+      "Menlo",
+      "sans-serif",
+      "system-ui",
+      "Monaco"
+    ],
+    "raw_html_len": 48620,
+    "body_text_len": 1444,
+    "text_html_ratio": 0.03,
+    "response_time_s": 0.456058,
+    "content_length_bytes": 48654,
+    "heading_stats": {
+      "counts": {
+        "h1": 1,
+        "h2": 4,
+        "h3": 7,
+        "h4": 0,
+        "h5": 0,
+        "h6": 0
+      },
+      "total": 12,
+      "max_depth": 3
+    },
+    "h1_stats": {
+      "h1_count": 1
+    },
+    "broken_links": 0,
+    "ssl_info": {
+      "valid": true,
+      "expires": "2025-12-02T15:39:39",
+      "days_left": 37
+    },
+    "has_ssl": true,
+    "contact_info": {
+      "emails": [
+        "contact@biteofpower.com"
+      ],
+      "phones": [
+        "25 0 0 1 19",
+        "352) 376-2781",
+        "25 0 0 1 2",
+        "25 0 0 1 4",
+        "34 0 0 0 10",
+        "25 0 0 0 2",
+        "83 0 0 1-3",
+        "85 0 0 1-1",
+        "25 0 0 1-2",
+        "5 0 0 1 22 7",
+        "3 3 0 1 0 0 6 3 3 0 0 0 0-6",
+        "89 0 0 1 2",
+        "3523762781",
+        "5 0 0 1 2 16",
+        "16 0 0 0 4",
+        "5 0 0 0 3",
+        "33 0 0 0 5 20",
+        "89 0 0 1-5",
+        "493499345",
+        "5 0 0 1 16",
+        "5 0 0 0 4 7",
+        "84 0 0 0-1",
+        "5 0 0 0 7",
+        "0 0 24 24",
+        "1 1 0 1 1 0 2 1 1 0 0 1 0-2",
+        "5 5 0 1 1 0 10 5 5 0 0 1 0-10",
+        "5 0 0 1 7",
+        "5 0 0 0 16"
+      ],
+      "addresses": []
+    },
+    "contact_info_found": true,
+    "has_schema": false,
+    "images_with_alt_ratio": 1.0,
+    "robots_sitemap": {
+      "robots": true,
+      "sitemap": false
+    },
+    "security_headers": {
+      "csp": false,
+      "hsts": true,
+      "x_frame_options": true,
+      "x_content_type_options": true,
+      "referrer_policy": true,
+      "permissions_policy": true
+    },
+    "paragraph_stats": {
+      "count": 15,
+      "avg_words": 9.266666666666667,
+      "median_words": 9
+    },
+    "external_resource_ratio": 0.0,
+    "keyword_relevance": 0.8333333333333334,
+    "copyright_fresh": false,
+    "lighthouse": null,
+    "mobile_friendly": true,
+    "meta_description": true,
+    "parsed": {
+      "meta": {
+        "title": "Bite of Power - Mediterranean-American Fusion Restaurant",
+        "meta": {
+          "viewport": "width=device-width, initial-scale=1",
+          "next-size-adjust": "",
+          "description": "Late-night Mediterranean-American fusion restaurant across from UF. Bold flavors, heartfelt effort, and flavor that packs a punch!",
+          "og:title": "Bite of Power - Mediterranean-American Fusion",
+          "og:description": "Late-night Mediterranean-American fusion across from UF. Flavor that packs a punch.",
+          "og:url": "https://biteofpower.com",
+          "og:site_name": "Bite of Power",
+          "og:locale": "en_US",
+          "og:image": "https://biteofpower.com/bop-hero.png",
+          "og:image:width": "1200",
+          "og:image:height": "630",
+          "og:image:alt": "Bite of Power",
+          "og:type": "website",
+          "twitter:card": "summary_large_image",
+          "twitter:title": "Bite of Power - Mediterranean-American Fusion",
+          "twitter:description": "Late-night Mediterranean-American fusion across from UF.",
+          "twitter:image": "https://biteofpower.com/bop-hero.png"
+        }
+      },
+      "headings": [
+        {
+          "tag": "h1",
+          "text": "BITE OF POWER"
+        },
+        {
+          "tag": "h2",
+          "text": "OUR HALAL MENU"
+        },
+        {
+          "tag": "h2",
+          "text": "ABOUT US"
+        },
+        {
+          "tag": "h2",
+          "text": "HOURS*"
+        },
+        {
+          "tag": "h2",
+          "text": "CONTACT"
+        },
+        {
+          "tag": "h3",
+          "text": "MIXED KEBAB BOWL"
+        },
+        {
+          "tag": "h3",
+          "text": "BEAST BURGER"
+        },
+        {
+          "tag": "h3",
+          "text": "CHICKEN GYRO"
+        },
+        {
+          "tag": "h3",
+          "text": "LAMB GYRO BOWL"
+        },
+        {
+          "tag": "h3",
+          "text": "OG MAMA'S BURGER"
+        },
+        {
+          "tag": "h3",
+          "text": "FALAFEL GYRO"
+        },
+        {
+          "tag": "h3",
+          "text": "CHICKEN CHEESESTEAK"
+        }
+      ],
+      "body_text": "Menu About Hours Contact Menu About Hours Contact BITE OF POWER Mediterranean-American fusion that packs a punch. Hours: Mon-Fri 11:00 AM - 3:00 AM, Sat-Sun 12:00 PM - 3:00 AM Contact: (352) 376-2781 Order Online (Preferred)* Order on DoorDash Order on Uber Eats *30% off on pickups OUR HALAL MENU MIXED KEBAB BOWL Over rice with side. Salad & choice of sauce. $14.99 BEAST BURGER Double Sirloin, Cheddar Cheese, Turkey bacon, lettuce, onions, tomatoes, ketchup $14.99 CHICKEN GYRO With tomatoes, onions, lettuce, and choice of sauce. $9.49 LAMB GYRO BOWL Over rice with side. Salad & choice of sauce. $10.99 OG MAMA'S BURGER With tomatoes, onions, lettuce, and choice of sauce. $9.99 FALAFEL GYRO With tomatoes, onions, lettuce, and choice of sauce. $9.49 CHICKEN CHEESESTEAK Grilled chicken, cheese, green peppers & onions $10.99 ABOUT US Located right across from the University of Florida, Bite of Power brings you the boldest Mediterranean-American fusion flavors in town. We\u2019re just a local spot. Late night, after class, whenever\u2014you\u2019ll eat right here. \ud83d\udccd Inside of Target Copy, 1412 W University Ave, Gainesville, FL 32603 Perfect for students and locals FREE PARKING HOURS* Monday - Friday 11:00 AM - 3:00 AM Saturday - Sunday 12:00 PM - 3:00 AM *Check the most recent hours on our Google Business Profile CONTACT \ud83d\udcde (352) 376-2781 \ud83d\udccd Across from Lib West BITE OF POWER Flavor that packs a punch \u2022 Late-night Mediterranean-American fusion",
+      "links": [
+        {
+          "href": "/",
+          "url": "https://biteofpower.com/",
+          "text": ""
+        },
+        {
+          "href": "#menu",
+          "url": "https://biteofpower.com#menu",
+          "text": "Menu"
+        },
+        {
+          "href": "#about",
+          "url": "https://biteofpower.com#about",
+          "text": "About"
+        },
+        {
+          "href": "#hours",
+          "url": "https://biteofpower.com#hours",
+          "text": "Hours"
+        },
+        {
+          "href": "#contact",
+          "url": "https://biteofpower.com#contact",
+          "text": "Contact"
+        },
+        {
+          "href": "#menu",
+          "url": "https://biteofpower.com#menu",
+          "text": "Menu"
+        },
+        {
+          "href": "#about",
+          "url": "https://biteofpower.com#about",
+          "text": "About"
+        },
+        {
+          "href": "#hours",
+          "url": "https://biteofpower.com#hours",
+          "text": "Hours"
+        },
+        {
+          "href": "#contact",
+          "url": "https://biteofpower.com#contact",
+          "text": "Contact"
+        },
+        {
+          "href": "tel:3523762781",
+          "url": "tel:3523762781",
+          "text": "Contact: (352) 376-2781"
+        },
+        {
+          "href": "https://order.toasttab.com/online/bite-of-power-uf",
+          "url": "https://order.toasttab.com/online/bite-of-power-uf",
+          "text": "Order Online (Preferred)*"
+        },
+        {
+          "href": "https://www.doordash.com/store/bite-of-power-gainesville-1762205/",
+          "url": "https://www.doordash.com/store/bite-of-power-gainesville-1762205/",
+          "text": "Order on DoorDash"
+        },
+        {
+          "href": "https://www.ubereats.com/store/bite-of-power/PcgKBBlYTISCSKXgz9IuAA",
+          "url": "https://www.ubereats.com/store/bite-of-power/PcgKBBlYTISCSKXgz9IuAA",
+          "text": "Order on Uber Eats"
+        },
+        {
+          "href": "https://www.google.com/maps/place/BITE+of+POWER/@29.6522253,-82.3437901,17z/data=!3m1!4b1!4m6!3m5!1s0x88e8a3e7c309054d:0x9f7662e5538bb215!8m2!3d29.6522253!4d-82.3412152!16s%2Fg%2F11mx16cvtz?entry=ttu&g_ep=EgoyMDI1MDgyNy4wIKXMDSoASAFQAw%3D%3D",
+          "url": "https://www.google.com/maps/place/BITE+of+POWER/@29.6522253,-82.3437901,17z/data=!3m1!4b1!4m6!3m5!1s0x88e8a3e7c309054d:0x9f7662e5538bb215!8m2!3d29.6522253!4d-82.3412152!16s%2Fg%2F11mx16cvtz?entry=ttu&g_ep=EgoyMDI1MDgyNy4wIKXMDSoASAFQAw%3D%3D",
+          "text": "Inside of Target Copy, 1412 W University Ave, Gainesville, FL 32603"
+        },
+        {
+          "href": "https://www.google.com/maps/place/BITE+of+POWER/@29.6522253,-82.3437901,17z/data=!3m1!4b1!4m6!3m5!1s0x88e8a3e7c309054d:0x9f7662e5538bb215!8m2!3d29.6522253!4d-82.3412152!16s%2Fg%2F11mx16cvtz?entry=ttu&g_ep=EgoyMDI1MDgyNy4wIKXMDSoASAFQAw%3D%3D",
+          "url": "https://www.google.com/maps/place/BITE+of+POWER/@29.6522253,-82.3437901,17z/data=!3m1!4b1!4m6!3m5!1s0x88e8a3e7c309054d:0x9f7662e5538bb215!8m2!3d29.6522253!4d-82.3412152!16s%2Fg%2F11mx16cvtz?entry=ttu&g_ep=EgoyMDI1MDgyNy4wIKXMDSoASAFQAw%3D%3D",
+          "text": ""
+        },
+        {
+          "href": "tel:3523762781",
+          "url": "tel:3523762781",
+          "text": "(352) 376-2781"
+        },
+        {
+          "href": "https://www.instagram.com/biteofpower/",
+          "url": "https://www.instagram.com/biteofpower/",
+          "text": ""
+        },
+        {
+          "href": "https://www.tiktok.com/@biteofpower",
+          "url": "https://www.tiktok.com/@biteofpower",
+          "text": ""
+        },
+        {
+          "href": "mailto:contact@biteofpower.com",
+          "url": "mailto:contact@biteofpower.com",
+          "text": ""
+        }
+      ],
+      "images": [
+        {
+          "src": "https://biteofpower.com/_next/image?url=%2Fbop_logo.png&w=256&q=75",
+          "alt": "Bite of Power Logo",
+          "title": ""
+        },
+        {
+          "src": "https://biteofpower.com/_next/image?url=%2Fbop-hero.png&w=3840&q=75",
+          "alt": "Bite of Power Hero",
+          "title": ""
+        },
+        {
+          "src": "https://biteofpower.com/toast-logo.svg",
+          "alt": "Toast Logo",
+          "title": ""
+        },
+        {
+          "src": "https://biteofpower.com/_next/image?url=%2Fdoordash-logo.jpg&w=96&q=75",
+          "alt": "DoorDash Logo",
+          "title": ""
+        },
+        {
+          "src": "https://biteofpower.com/_next/image?url=%2Fuber-logo.jpg&w=96&q=75",
+          "alt": "Uber Eats Logo",
+          "title": ""
+        },
+        {
+          "src": "https://biteofpower.com/_next/image?url=%2Fmenu%2Fmixed-kebab-bowl.jpeg&w=3840&q=75",
+          "alt": "Mixed Kebab Bowl",
+          "title": ""
+        },
+        {
+          "src": "https://biteofpower.com/_next/image?url=%2Fmenu%2FBeast-Burger.jpg&w=3840&q=75",
+          "alt": "Beast Burger",
+          "title": ""
+        },
+        {
+          "src": "https://biteofpower.com/_next/image?url=%2Fmenu%2FChicken-gyro.jpeg&w=3840&q=75",
+          "alt": "Chicken Gyro",
+          "title": ""
+        },
+        {
+          "src": "https://biteofpower.com/_next/image?url=%2Fmenu%2Flamb-gyro-bowl.png&w=3840&q=75",
+          "alt": "Lamb Gyro Bowl",
+          "title": ""
+        },
+        {
+          "src": "https://biteofpower.com/_next/image?url=%2Fmenu%2FOG-Mamas-Burger.jpeg&w=3840&q=75",
+          "alt": "OG MAMAS BURGER",
+          "title": ""
+        },
+        {
+          "src": "https://biteofpower.com/_next/image?url=%2Fmenu%2Ffalafel-gyro.jpeg&w=3840&q=75",
+          "alt": "Falafel Gyro",
+          "title": ""
+        },
+        {
+          "src": "https://biteofpower.com/_next/image?url=%2Fmenu%2FChicken-cheeseteak.jpeg&w=3840&q=75",
+          "alt": "Chicken Cheesesteak",
+          "title": ""
+        },
+        {
+          "src": "https://biteofpower.com/_next/image?url=%2Flocation.png&w=3840&q=75",
+          "alt": "Location",
+          "title": ""
+        }
+      ],
+      "css_links": [
+        "https://biteofpower.com/_next/static/chunks/e106510d8de001d0.css"
+      ],
+      "inline_styles": [
+        "color:transparent",
+        "position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent",
+        "color:transparent",
+        "color:transparent",
+        "color:transparent",
+        "scrollbar-width:none;-ms-overflow-style:none",
+        "position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent",
+        "position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent",
+        "position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent",
+        "position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent",
+        "position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent",
+        "position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent",
+        "position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent",
+        "position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
+      ],
+      "scripts": [
+        {
+          "src": "https://biteofpower.com/_next/static/chunks/5564f493499345f1.js",
+          "inline": false,
+          "text_len": 0
+        },
+        {
+          "src": "https://biteofpower.com/_next/static/chunks/202abb9aed9e828b.js",
+          "inline": false,
+          "text_len": 0
+        },
+        {
+          "src": "https://biteofpower.com/_next/static/chunks/08b60b045956f1b1.js",
+          "inline": false,
+          "text_len": 0
+        },
+        {
+          "src": "https://biteofpower.com/_next/static/chunks/turbopack-85c9eae90b28ce14.js",
+          "inline": false,
+          "text_len": 0
+        },
+        {
+          "src": "https://biteofpower.com/_next/static/chunks/ff1a16fafef87110.js",
+          "inline": false,
+          "text_len": 0
+        },
+        {
+          "src": "https://biteofpower.com/_next/static/chunks/7dd66bdf8a7e5707.js",
+          "inline": false,
+          "text_len": 0
+        },
+        {
+          "src": "https://biteofpower.com/_next/static/chunks/becd4e30171e5727.js",
+          "inline": false,
+          "text_len": 0
+        },
+        {
+          "src": "https://biteofpower.com/_next/static/chunks/a6dad97d9634a72d.js",
+          "inline": false,
+          "text_len": 0
+        },
+        {
+          "src": "https://biteofpower.com/_next/static/chunks/c85a7d07e7b82c9a.js",
+          "inline": false,
+          "text_len": 0
+        },
+        {
+          "src": "",
+          "inline": true,
+          "text_len": 43
+        },
+        {
+          "src": "",
+          "inline": true,
+          "text_len": 839
+        },
+        {
+          "src": "",
+          "inline": true,
+          "text_len": 5366
+        },
+        {
+          "src": "",
+          "inline": true,
+          "text_len": 1234
+        },
+        {
+          "src": "",
+          "inline": true,
+          "text_len": 935
+        },
+        {
+          "src": "",
+          "inline": true,
+          "text_len": 632
+        },
+        {
+          "src": "",
+          "inline": true,
+          "text_len": 2649
+        },
+        {
+          "src": "",
+          "inline": true,
+          "text_len": 2150
+        },
+        {
+          "src": "",
+          "inline": true,
+          "text_len": 2841
+        },
+        {
+          "src": "",
+          "inline": true,
+          "text_len": 889
+        },
+        {
+          "src": "",
+          "inline": true,
+          "text_len": 187
+        },
+        {
+          "src": "",
+          "inline": true,
+          "text_len": 144
+        },
+        {
+          "src": "",
+          "inline": true,
+          "text_len": 2413
+        },
+        {
+          "src": "",
+          "inline": true,
+          "text_len": 47
+        }
+      ],
+      "favicon": "https://biteofpower.com/favicon.ico",
+      "paragraphs": [
+        "Mediterranean-American fusion that packs a punch.",
+        "Hours: Mon-Fri 11:00 AM - 3:00 AM, Sat-Sun 12:00 PM - 3:00 AM",
+        "Contact: (352) 376-2781",
+        "Over rice with side. Salad & choice of sauce.",
+        "Double Sirloin, Cheddar Cheese, Turkey bacon, lettuce, onions, tomatoes, ketchup",
+        "With tomatoes, onions, lettuce, and choice of sauce.",
+        "Over rice with side. Salad & choice of sauce.",
+        "With tomatoes, onions, lettuce, and choice of sauce.",
+        "With tomatoes, onions, lettuce, and choice of sauce.",
+        "Grilled chicken, cheese, green peppers & onions",
+        "Located right across from the University of Florida, Bite of Power brings you the boldest Mediterranean-American fusion flavors in town.",
+        "We\u2019re just a local spot. Late night, after class, whenever\u2014you\u2019ll eat right here.",
+        "Inside of Target Copy, 1412 W University Ave, Gainesville, FL 32603",
+        "Perfect for students and locals",
+        "Flavor that packs a punch \u2022 Late-night Mediterranean-American fusion"
+      ],
+      "paragraph_lengths": [
+        6,
+        13,
+        3,
+        9,
+        10,
+        8,
+        9,
+        8,
+        8,
+        7,
+        20,
+        13,
+        11,
+        5,
+        9
+      ],
+      "social_links": [
+        "https://www.instagram.com/biteofpower/"
+      ],
+      "viewport": true,
+      "canonical": null,
+      "raw_html": "<!DOCTYPE html><!--8CQvH14OOqp63uSqlBXlX--><html lang=\"en\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"/><link rel=\"preload\" href=\"/_next/static/media/7a514bda021b6b92-s.p.b628dbda.woff2\" as=\"font\" crossorigin=\"\" type=\"font/woff2\"/><link rel=\"preload\" as=\"image\" imageSrcSet=\"/_next/image?url=%2Fbop_logo.png&amp;w=128&amp;q=75 1x, /_next/image?url=%2Fbop_logo.png&amp;w=256&amp;q=75 2x\"/><link rel=\"preload\" as=\"image\" imageSrcSet=\"/_next/image?url=%2Fbop-hero.png&amp;w=640&amp;q=75 640w, /_next/image?url=%2Fbop-hero.png&amp;w=750&amp;q=75 750w, /_next/image?url=%2Fbop-hero.png&amp;w=828&amp;q=75 828w, /_next/image?url=%2Fbop-hero.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=%2Fbop-hero.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=%2Fbop-hero.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=%2Fbop-hero.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=%2Fbop-hero.png&amp;w=3840&amp;q=75 3840w\" imageSizes=\"100vw\"/><link rel=\"stylesheet\" href=\"/_next/static/chunks/e106510d8de001d0.css\" data-precedence=\"next\"/><link rel=\"preload\" as=\"script\" fetchPriority=\"low\" href=\"/_next/static/chunks/c85a7d07e7b82c9a.js\"/><script src=\"/_next/static/chunks/5564f493499345f1.js\" async=\"\"></script><script src=\"/_next/static/chunks/202abb9aed9e828b.js\" async=\"\"></script><script src=\"/_next/static/chunks/08b60b045956f1b1.js\" async=\"\"></script><script src=\"/_next/static/chunks/turbopack-85c9eae90b28ce14.js\" async=\"\"></script><script src=\"/_next/static/chunks/ff1a16fafef87110.js\" async=\"\"></script><script src=\"/_next/static/chunks/7dd66bdf8a7e5707.js\" async=\"\"></script><script src=\"/_next/static/chunks/becd4e30171e5727.js\" async=\"\"></script><meta name=\"next-size-adjust\" content=\"\"/><title>Bite of Power - Mediterranean-American Fusion Restaurant</title><meta name=\"description\" content=\"Late-night Mediterranean-American fusion restaurant across from UF. Bold flavors, heartfelt effort, and flavor that packs a punch!\"/><link rel=\"manifest\" href=\"/manifest.json\"/><meta property=\"og:title\" content=\"Bite of Power - Mediterranean-American Fusion\"/><meta property=\"og:description\" content=\"Late-night Mediterranean-American fusion across from UF. Flavor that packs a punch.\"/><meta property=\"og:url\" content=\"https://biteofpower.com\"/><meta property=\"og:site_name\" content=\"Bite of Power\"/><meta property=\"og:locale\" content=\"en_US\"/><meta property=\"og:image\" content=\"https://biteofpower.com/bop-hero.png\"/><meta property=\"og:image:width\" content=\"1200\"/><meta property=\"og:image:height\" content=\"630\"/><meta property=\"og:image:alt\" content=\"Bite of Power\"/><meta property=\"og:type\" content=\"website\"/><meta name=\"twitter:card\" content=\"summary_large_image\"/><meta name=\"twitter:title\" content=\"Bite of Power - Mediterranean-American Fusion\"/><meta name=\"twitter:description\" content=\"Late-night Mediterranean-American fusion across from UF.\"/><meta name=\"twitter:image\" content=\"https://biteofpower.com/bop-hero.png\"/><link rel=\"shortcut icon\" href=\"/favicon.ico\"/><link rel=\"icon\" href=\"/favicon.ico\" sizes=\"any\"/><link rel=\"icon\" href=\"/favicon.png\" type=\"image/png\" sizes=\"32x32\"/><link rel=\"icon\" href=\"/favicon.png\" type=\"image/png\" sizes=\"16x16\"/><link rel=\"apple-touch-icon\" href=\"/favicon.png\" sizes=\"180x180\" type=\"image/png\"/><script src=\"/_next/static/chunks/a6dad97d9634a72d.js\" noModule=\"\"></script></head><body class=\"league_spartan_2c4a6785-module__DHKeKG__variable antialiased\"><div hidden=\"\"><!--$--><!--/$--></div><div class=\"min-h-screen bg-black text-white\"><nav class=\"fixed top-0 w-full z-50 transition-all bg-transparent\"><div class=\"w-full px-4 sm:px-4 lg:px-4\"><div class=\"flex justify-between items-center h-20\"><div class=\"flex items-center\"><a href=\"/\"><img alt=\"Bite of Power Logo\" width=\"100\" height=\"100\" decoding=\"async\" data-nimg=\"1\" class=\"object-contain cursor-pointer\" style=\"color:transparent\" srcSet=\"/_next/image?url=%2Fbop_logo.png&amp;w=128&amp;q=75 1x, /_next/image?url=%2Fbop_logo.png&amp;w=256&amp;q=75 2x\" src=\"/_next/image?url=%2Fbop_logo.png&amp;w=256&amp;q=75\"/></a></div><div class=\"hidden md:flex items-center gap-8 font-league-spartan\"><a href=\"#menu\" class=\"text-white/90 hover:text-yellow-400 transition-colors\">Menu</a><a href=\"#about\" class=\"text-white/90 hover:text-yellow-400 transition-colors\">About</a><a href=\"#hours\" class=\"text-white/90 hover:text-yellow-400 transition-colors\">Hours</a><a href=\"#contact\" class=\"text-white/90 hover:text-yellow-400 transition-colors\">Contact</a></div><div class=\"md:hidden\"><button aria-label=\"Open menu\" class=\"text-white hover:text-yellow-400 p-2 rounded-md border border-white/10 hover:border-yellow-400/40 transition-colors\"><svg class=\"w-6 h-6\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M4 6h16M4 12h16M4 18h16\"></path></svg></button></div></div></div><div class=\"fixed inset-0 z-50 md:hidden pointer-events-none\"><div class=\"absolute inset-0 bg-black/60 transition-opacity opacity-0\"></div><div class=\"absolute top-0 right-0 h-screen w-72 bg-black border-l border-yellow-400/20 transform transition-transform translate-x-full\"><div class=\"flex items-center justify-end h-20 px-4 border-b border-yellow-400/10 bg-black\"><button aria-label=\"Close menu\" class=\"text-white hover:text-yellow-400 p-2 rounded-md border border-white/10 hover:border-yellow-400/40 transition-colors\"><svg class=\"w-6 h-6\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M6 18L18 6M6 6l12 12\"></path></svg></button></div><div class=\"p-4 flex flex-col gap-2 font-league-spartan bg-black\"><a href=\"#menu\" class=\"px-3 py-3 rounded-md text-white hover:bg-white/5\">Menu</a><a href=\"#about\" class=\"px-3 py-3 rounded-md text-white hover:bg-white/5\">About</a><a href=\"#hours\" class=\"px-3 py-3 rounded-md text-white hover:bg-white/5\">Hours</a><a href=\"#contact\" class=\"px-3 py-3 rounded-md text-white hover:bg-white/5\">Contact</a></div></div></div></nav><section class=\"relative min-h-screen pt-20 md:pt-24 pb-16 flex items-center justify-center overflow-hidden\"><div class=\"absolute inset-0\"><img alt=\"Bite of Power Hero\" decoding=\"async\" data-nimg=\"fill\" class=\"object-cover\" style=\"position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent\" sizes=\"100vw\" srcSet=\"/_next/image?url=%2Fbop-hero.png&amp;w=640&amp;q=75 640w, /_next/image?url=%2Fbop-hero.png&amp;w=750&amp;q=75 750w, /_next/image?url=%2Fbop-hero.png&amp;w=828&amp;q=75 828w, /_next/image?url=%2Fbop-hero.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=%2Fbop-hero.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=%2Fbop-hero.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=%2Fbop-hero.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=%2Fbop-hero.png&amp;w=3840&amp;q=75 3840w\" src=\"/_next/image?url=%2Fbop-hero.png&amp;w=3840&amp;q=75\"/><div class=\"absolute inset-0 bg-black/60\"></div></div><canvas class=\"absolute inset-0 z-[1] pointer-events-none opacity-70 mix-blend-screen\" aria-hidden=\"true\"></canvas><div class=\"relative z-10 text-center px-4\"><h1 class=\"font-gagalin text-9xl md:text-[12rem] text-transparent bg-clip-text  bg-gradient-to-b from-[#FFF27A] via-[#E5D202] to-[#A89C02]  drop-shadow-[0_2px_6px_rgba(0,0,0,0.3)] mb-6\">BITE OF POWER</h1><p class=\"font-league-spartan text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto\">Mediterranean-American fusion that packs a punch.</p><div class=\"font-league-spartan text-lg md:text-xl text-white/90 mb-8 max-w-3xl mx-auto space-y-2\"><p>Hours: Mon-Fri 11:00 AM - 3:00 AM, Sat-Sun 12:00 PM - 3:00 AM</p><a href=\"tel:3523762781\"><p>Contact: (352) 376-2781</p></a></div><div class=\"flex flex-col sm:flex-row gap-4 justify-center items-center mb-8 max-w-4xl mx-auto\"><a href=\"https://order.toasttab.com/online/bite-of-power-uf\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"group bg-[#E5D202] text-black font-league-spartan font-bold px-8 py-4 rounded-lg transition-all duration-200 shadow-lg hover:shadow-yellow-400/40 hover:shadow-xl transform hover:-translate-y-0.5 active:translate-y-0 flex items-center gap-3 w-full sm:w-auto justify-center\"><img alt=\"Toast Logo\" loading=\"lazy\" width=\"36\" height=\"36\" decoding=\"async\" data-nimg=\"1\" class=\"h-8 md:h-9 w-auto object-contain shrink-0\" style=\"color:transparent\" src=\"/toast-logo.svg\"/><span class=\"relative\"><span>Order Online (Preferred)*</span><span class=\"absolute -bottom-0.5 left-0 w-0 h-[2px] bg-black transition-all duration-200 group-hover:w-full\"></span></span></a><a href=\"https://www.doordash.com/store/bite-of-power-gainesville-1762205/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"group bg-[#FF0003] text-white font-league-spartan font-bold px-8 py-4 rounded-lg transition-all duration-200 shadow-lg hover:shadow-red-500/40 hover:shadow-xl transform hover:-translate-y-0.5 active:translate-y-0 flex items-center gap-3 w-full sm:w-auto justify-center\"><img alt=\"DoorDash Logo\" loading=\"lazy\" width=\"36\" height=\"36\" decoding=\"async\" data-nimg=\"1\" class=\"h-8 md:h-9 w-auto object-contain shrink-0 rounded\" style=\"color:transparent\" srcSet=\"/_next/image?url=%2Fdoordash-logo.jpg&amp;w=48&amp;q=75 1x, /_next/image?url=%2Fdoordash-logo.jpg&amp;w=96&amp;q=75 2x\" src=\"/_next/image?url=%2Fdoordash-logo.jpg&amp;w=96&amp;q=75\"/><span class=\"relative\"><span>Order on DoorDash</span><span class=\"absolute -bottom-0.5 left-0 w-0 h-[2px] bg-white transition-all duration-200 group-hover:w-full\"></span></span></a><a href=\"https://www.ubereats.com/store/bite-of-power/PcgKBBlYTISCSKXgz9IuAA\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"group bg-black text-white font-league-spartan font-bold px-8 py-4 rounded-lg transition-all duration-200 shadow-lg hover:shadow-gray-600/40 hover:shadow-xl transform hover:-translate-y-0.5 active:translate-y-0 flex items-center gap-3 border border-gray-600 w-full sm:w-auto justify-center\"><img alt=\"Uber Eats Logo\" loading=\"lazy\" width=\"36\" height=\"36\" decoding=\"async\" data-nimg=\"1\" class=\"h-8 md:h-9 w-auto object-contain shrink-0\" style=\"color:transparent\" srcSet=\"/_next/image?url=%2Fuber-logo.jpg&amp;w=48&amp;q=75 1x, /_next/image?url=%2Fuber-logo.jpg&amp;w=96&amp;q=75 2x\" src=\"/_next/image?url=%2Fuber-logo.jpg&amp;w=96&amp;q=75\"/><span class=\"relative\"><span>Order on Uber Eats</span><span class=\"absolute -bottom-0.5 left-0 w-0 h-[2px] bg-white transition-all duration-200 group-hover:w-full\"></span></span></a></div></div><div class=\"absolute bottom-2 right-0 z-20\"><span class=\"text-white font-league-spartan px-4 py-2 rounded-lg shadow-lg\">*30% off on pickups</span></div></section><section id=\"menu\" class=\"bg-black py-20 \"><div class=\"max-w-7xl mx-auto px-4 sm:px-6 lg:px-8\"><h2 class=\"font-gagalin text-5xl text-[#E5D202] text-center mb-16\">OUR HALAL MENU</h2><div class=\" transition-all duration-700 ease-out will-change-transform will-change-opacity opacity-0 translate-y-6\"><div class=\"relative\"><button class=\"absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-yellow-400 text-black p-3 rounded-full shadow-lg hover:bg-yellow-300 transition-colors duration-200 transform hover:scale-110\"><svg class=\"w-6 h-6\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M15 19l-7-7 7-7\"></path></svg></button><button class=\"absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-yellow-400 text-black p-3 rounded-full shadow-lg hover:bg-yellow-300 transition-colors duration-200 transform hover:scale-110\"><svg class=\"w-6 h-6\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M9 5l7 7-7 7\"></path></svg></button><div id=\"menu-carousel\" class=\"flex gap-8 overflow-x-auto scrollbar-hide scroll-smooth px-4\" style=\"scrollbar-width:none;-ms-overflow-style:none\"><div class=\"flex-shrink-0 w-80 bg-gray-900 rounded-lg p-6 border border-yellow-400/20 hover:border-yellow-400/40 transition-colors\"><div class=\"h-48 bg-white rounded-lg mb-4 relative overflow-hidden\"><img alt=\"Mixed Kebab Bowl\" loading=\"lazy\" decoding=\"async\" data-nimg=\"fill\" class=\"object-cover rounded-lg\" style=\"position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent\" sizes=\"100vw\" srcSet=\"/_next/image?url=%2Fmenu%2Fmixed-kebab-bowl.jpeg&amp;w=640&amp;q=75 640w, /_next/image?url=%2Fmenu%2Fmixed-kebab-bowl.jpeg&amp;w=750&amp;q=75 750w, /_next/image?url=%2Fmenu%2Fmixed-kebab-bowl.jpeg&amp;w=828&amp;q=75 828w, /_next/image?url=%2Fmenu%2Fmixed-kebab-bowl.jpeg&amp;w=1080&amp;q=75 1080w, /_next/image?url=%2Fmenu%2Fmixed-kebab-bowl.jpeg&amp;w=1200&amp;q=75 1200w, /_next/image?url=%2Fmenu%2Fmixed-kebab-bowl.jpeg&amp;w=1920&amp;q=75 1920w, /_next/image?url=%2Fmenu%2Fmixed-kebab-bowl.jpeg&amp;w=2048&amp;q=75 2048w, /_next/image?url=%2Fmenu%2Fmixed-kebab-bowl.jpeg&amp;w=3840&amp;q=75 3840w\" src=\"/_next/image?url=%2Fmenu%2Fmixed-kebab-bowl.jpeg&amp;w=3840&amp;q=75\"/></div><h3 class=\"font-gagalin text-xl text-yellow-400 mb-2\">MIXED KEBAB BOWL</h3><p class=\"font-league-spartan text-gray-300 mb-4\">Over rice with side. Salad &amp; choice of sauce.</p><span class=\"font-league-spartan text-yellow-400 font-bold\">$14.99</span></div><div class=\"flex-shrink-0 w-80 bg-gray-900 rounded-lg p-6 border border-yellow-400/20 hover:border-yellow-400/40 transition-colors\"><div class=\"h-48 bg-white rounded-lg mb-4 relative overflow-hidden\"><img alt=\"Beast Burger\" loading=\"lazy\" decoding=\"async\" data-nimg=\"fill\" class=\"object-cover rounded-lg\" style=\"position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent\" sizes=\"100vw\" srcSet=\"/_next/image?url=%2Fmenu%2FBeast-Burger.jpg&amp;w=640&amp;q=75 640w, /_next/image?url=%2Fmenu%2FBeast-Burger.jpg&amp;w=750&amp;q=75 750w, /_next/image?url=%2Fmenu%2FBeast-Burger.jpg&amp;w=828&amp;q=75 828w, /_next/image?url=%2Fmenu%2FBeast-Burger.jpg&amp;w=1080&amp;q=75 1080w, /_next/image?url=%2Fmenu%2FBeast-Burger.jpg&amp;w=1200&amp;q=75 1200w, /_next/image?url=%2Fmenu%2FBeast-Burger.jpg&amp;w=1920&amp;q=75 1920w, /_next/image?url=%2Fmenu%2FBeast-Burger.jpg&amp;w=2048&amp;q=75 2048w, /_next/image?url=%2Fmenu%2FBeast-Burger.jpg&amp;w=3840&amp;q=75 3840w\" src=\"/_next/image?url=%2Fmenu%2FBeast-Burger.jpg&amp;w=3840&amp;q=75\"/></div><h3 class=\"font-gagalin text-xl text-yellow-400 mb-2\">BEAST BURGER</h3><p class=\"font-league-spartan text-gray-300 mb-4\">Double Sirloin, Cheddar Cheese, Turkey bacon, lettuce, onions, tomatoes, ketchup</p><span class=\"font-league-spartan text-yellow-400 font-bold\">$14.99</span></div><div class=\"flex-shrink-0 w-80 bg-gray-900 rounded-lg p-6 border border-yellow-400/20 hover:border-yellow-400/40 transition-colors\"><div class=\"h-48 bg-white rounded-lg mb-4 relative overflow-hidden\"><img alt=\"Chicken Gyro\" loading=\"lazy\" decoding=\"async\" data-nimg=\"fill\" class=\"object-cover rounded-lg\" style=\"position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent\" sizes=\"100vw\" srcSet=\"/_next/image?url=%2Fmenu%2FChicken-gyro.jpeg&amp;w=640&amp;q=75 640w, /_next/image?url=%2Fmenu%2FChicken-gyro.jpeg&amp;w=750&amp;q=75 750w, /_next/image?url=%2Fmenu%2FChicken-gyro.jpeg&amp;w=828&amp;q=75 828w, /_next/image?url=%2Fmenu%2FChicken-gyro.jpeg&amp;w=1080&amp;q=75 1080w, /_next/image?url=%2Fmenu%2FChicken-gyro.jpeg&amp;w=1200&amp;q=75 1200w, /_next/image?url=%2Fmenu%2FChicken-gyro.jpeg&amp;w=1920&amp;q=75 1920w, /_next/image?url=%2Fmenu%2FChicken-gyro.jpeg&amp;w=2048&amp;q=75 2048w, /_next/image?url=%2Fmenu%2FChicken-gyro.jpeg&amp;w=3840&amp;q=75 3840w\" src=\"/_next/image?url=%2Fmenu%2FChicken-gyro.jpeg&amp;w=3840&amp;q=75\"/></div><h3 class=\"font-gagalin text-xl text-yellow-400 mb-2\">CHICKEN GYRO</h3><p class=\"font-league-spartan text-gray-300 mb-4\">With tomatoes, onions, lettuce, and choice of sauce.</p><span class=\"font-league-spartan text-yellow-400 font-bold\">$9.49</span></div><div class=\"flex-shrink-0 w-80 bg-gray-900 rounded-lg p-6 border border-yellow-400/20 hover:border-yellow-400/40 transition-colors\"><div class=\"h-48 bg-white rounded-lg mb-4 relative overflow-hidden\"><img alt=\"Lamb Gyro Bowl\" loading=\"lazy\" decoding=\"async\" data-nimg=\"fill\" class=\"object-cover rounded-lg\" style=\"position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent\" sizes=\"100vw\" srcSet=\"/_next/image?url=%2Fmenu%2Flamb-gyro-bowl.png&amp;w=640&amp;q=75 640w, /_next/image?url=%2Fmenu%2Flamb-gyro-bowl.png&amp;w=750&amp;q=75 750w, /_next/image?url=%2Fmenu%2Flamb-gyro-bowl.png&amp;w=828&amp;q=75 828w, /_next/image?url=%2Fmenu%2Flamb-gyro-bowl.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=%2Fmenu%2Flamb-gyro-bowl.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=%2Fmenu%2Flamb-gyro-bowl.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=%2Fmenu%2Flamb-gyro-bowl.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=%2Fmenu%2Flamb-gyro-bowl.png&amp;w=3840&amp;q=75 3840w\" src=\"/_next/image?url=%2Fmenu%2Flamb-gyro-bowl.png&amp;w=3840&amp;q=75\"/></div><h3 class=\"font-gagalin text-xl text-yellow-400 mb-2\">LAMB GYRO BOWL</h3><p class=\"font-league-spartan text-gray-300 mb-4\">Over rice with side. Salad &amp; choice of sauce.</p><span class=\"font-league-spartan text-yellow-400 font-bold\">$10.99</span></div><div class=\"flex-shrink-0 w-80 bg-gray-900 rounded-lg p-6 border border-yellow-400/20 hover:border-yellow-400/40 transition-colors\"><div class=\"h-48 bg-white rounded-lg mb-4 relative overflow-hidden\"><img alt=\"OG MAMAS BURGER\" loading=\"lazy\" decoding=\"async\" data-nimg=\"fill\" class=\"object-cover rounded-lg scale-125\" style=\"position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent\" sizes=\"100vw\" srcSet=\"/_next/image?url=%2Fmenu%2FOG-Mamas-Burger.jpeg&amp;w=640&amp;q=75 640w, /_next/image?url=%2Fmenu%2FOG-Mamas-Burger.jpeg&amp;w=750&amp;q=75 750w, /_next/image?url=%2Fmenu%2FOG-Mamas-Burger.jpeg&amp;w=828&amp;q=75 828w, /_next/image?url=%2Fmenu%2FOG-Mamas-Burger.jpeg&amp;w=1080&amp;q=75 1080w, /_next/image?url=%2Fmenu%2FOG-Mamas-Burger.jpeg&amp;w=1200&amp;q=75 1200w, /_next/image?url=%2Fmenu%2FOG-Mamas-Burger.jpeg&amp;w=1920&amp;q=75 1920w, /_next/image?url=%2Fmenu%2FOG-Mamas-Burger.jpeg&amp;w=2048&amp;q=75 2048w, /_next/image?url=%2Fmenu%2FOG-Mamas-Burger.jpeg&amp;w=3840&amp;q=75 3840w\" src=\"/_next/image?url=%2Fmenu%2FOG-Mamas-Burger.jpeg&amp;w=3840&amp;q=75\"/></div><h3 class=\"font-gagalin text-xl text-yellow-400 mb-2\">OG MAMA&#x27;S BURGER</h3><p class=\"font-league-spartan text-gray-300 mb-4\">With tomatoes, onions, lettuce, and choice of sauce.</p><span class=\"font-league-spartan text-yellow-400 font-bold\">$9.99</span></div><div class=\"flex-shrink-0 w-80 bg-gray-900 rounded-lg p-6 border border-yellow-400/20 hover:border-yellow-400/40 transition-colors\"><div class=\"h-48 bg-white rounded-lg mb-4 relative overflow-hidden\"><img alt=\"Falafel Gyro\" loading=\"lazy\" decoding=\"async\" data-nimg=\"fill\" class=\"object-cover rounded-lg\" style=\"position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent\" sizes=\"100vw\" srcSet=\"/_next/image?url=%2Fmenu%2Ffalafel-gyro.jpeg&amp;w=640&amp;q=75 640w, /_next/image?url=%2Fmenu%2Ffalafel-gyro.jpeg&amp;w=750&amp;q=75 750w, /_next/image?url=%2Fmenu%2Ffalafel-gyro.jpeg&amp;w=828&amp;q=75 828w, /_next/image?url=%2Fmenu%2Ffalafel-gyro.jpeg&amp;w=1080&amp;q=75 1080w, /_next/image?url=%2Fmenu%2Ffalafel-gyro.jpeg&amp;w=1200&amp;q=75 1200w, /_next/image?url=%2Fmenu%2Ffalafel-gyro.jpeg&amp;w=1920&amp;q=75 1920w, /_next/image?url=%2Fmenu%2Ffalafel-gyro.jpeg&amp;w=2048&amp;q=75 2048w, /_next/image?url=%2Fmenu%2Ffalafel-gyro.jpeg&amp;w=3840&amp;q=75 3840w\" src=\"/_next/image?url=%2Fmenu%2Ffalafel-gyro.jpeg&amp;w=3840&amp;q=75\"/></div><h3 class=\"font-gagalin text-xl text-yellow-400 mb-2\">FALAFEL GYRO</h3><p class=\"font-league-spartan text-gray-300 mb-4\">With tomatoes, onions, lettuce, and choice of sauce.</p><span class=\"font-league-spartan text-yellow-400 font-bold\">$9.49</span></div><div class=\"flex-shrink-0 w-80 bg-gray-900 rounded-lg p-6 border border-yellow-400/20 hover:border-yellow-400/40 transition-colors\"><div class=\"h-48 bg-white rounded-lg mb-4 relative overflow-hidden\"><img alt=\"Chicken Cheesesteak\" loading=\"lazy\" decoding=\"async\" data-nimg=\"fill\" class=\"object-cover rounded-lg\" style=\"position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent\" sizes=\"100vw\" srcSet=\"/_next/image?url=%2Fmenu%2FChicken-cheeseteak.jpeg&amp;w=640&amp;q=75 640w, /_next/image?url=%2Fmenu%2FChicken-cheeseteak.jpeg&amp;w=750&amp;q=75 750w, /_next/image?url=%2Fmenu%2FChicken-cheeseteak.jpeg&amp;w=828&amp;q=75 828w, /_next/image?url=%2Fmenu%2FChicken-cheeseteak.jpeg&amp;w=1080&amp;q=75 1080w, /_next/image?url=%2Fmenu%2FChicken-cheeseteak.jpeg&amp;w=1200&amp;q=75 1200w, /_next/image?url=%2Fmenu%2FChicken-cheeseteak.jpeg&amp;w=1920&amp;q=75 1920w, /_next/image?url=%2Fmenu%2FChicken-cheeseteak.jpeg&amp;w=2048&amp;q=75 2048w, /_next/image?url=%2Fmenu%2FChicken-cheeseteak.jpeg&amp;w=3840&amp;q=75 3840w\" src=\"/_next/image?url=%2Fmenu%2FChicken-cheeseteak.jpeg&amp;w=3840&amp;q=75\"/></div><h3 class=\"font-gagalin text-xl text-yellow-400 mb-2\">CHICKEN CHEESESTEAK</h3><p class=\"font-league-spartan text-gray-300 mb-4\">Grilled chicken, cheese, green peppers &amp; onions</p><span class=\"font-league-spartan text-yellow-400 font-bold\">$10.99</span></div></div></div></div></div></section><section id=\"about\" class=\"bg-gradient-to-b from-gray-900 to-black py-20 \"><div class=\"max-w-7xl mx-auto px-4 sm:px-6 lg:px-8\"><div class=\"grid grid-cols-1 lg:grid-cols-2 gap-12 items-center\"><div class=\" transition-all duration-700 ease-out will-change-transform will-change-opacity opacity-0 translate-y-6\"><h2 class=\"font-gagalin text-5xl text-[#E5D202] mb-8\">ABOUT US</h2><p class=\"font-league-spartan text-xl text-gray-300 mb-6\">Located right across from the University of Florida, Bite of Power brings you the boldest Mediterranean-American fusion flavors in town.</p><p class=\"font-league-spartan text-lg text-gray-400 mb-8\">We\u2019re just a local spot. Late night, after class, whenever\u2014you\u2019ll eat right here.</p><div class=\"flex items-center space-x-4\"><div class=\"text-4xl\">\ud83d\udccd</div><div><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://www.google.com/maps/place/BITE+of+POWER/@29.6522253,-82.3437901,17z/data=!3m1!4b1!4m6!3m5!1s0x88e8a3e7c309054d:0x9f7662e5538bb215!8m2!3d29.6522253!4d-82.3412152!16s%2Fg%2F11mx16cvtz?entry=ttu&amp;g_ep=EgoyMDI1MDgyNy4wIKXMDSoASAFQAw%3D%3D\"><p class=\"font-league-spartan font-bold text-[#E5D202]\">Inside of Target Copy, 1412 W University Ave, Gainesville, FL 32603</p></a><p class=\"font-league-spartan text-gray-400\">Perfect for students and locals</p></div></div></div><div class=\"relative transition-all duration-700 ease-out will-change-transform will-change-opacity opacity-0 translate-y-6\"><div class=\"h-96 bg-gradient-to-br from-yellow-400/20 to-gray-700 rounded-lg\"><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://www.google.com/maps/place/BITE+of+POWER/@29.6522253,-82.3437901,17z/data=!3m1!4b1!4m6!3m5!1s0x88e8a3e7c309054d:0x9f7662e5538bb215!8m2!3d29.6522253!4d-82.3412152!16s%2Fg%2F11mx16cvtz?entry=ttu&amp;g_ep=EgoyMDI1MDgyNy4wIKXMDSoASAFQAw%3D%3D\"><img alt=\"Location\" loading=\"lazy\" decoding=\"async\" data-nimg=\"fill\" class=\"object-cover rounded-lg\" style=\"position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent\" sizes=\"(max-width: 1024px) 100vw, 50vw\" srcSet=\"/_next/image?url=%2Flocation.png&amp;w=384&amp;q=75 384w, /_next/image?url=%2Flocation.png&amp;w=640&amp;q=75 640w, /_next/image?url=%2Flocation.png&amp;w=750&amp;q=75 750w, /_next/image?url=%2Flocation.png&amp;w=828&amp;q=75 828w, /_next/image?url=%2Flocation.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=%2Flocation.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=%2Flocation.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=%2Flocation.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=%2Flocation.png&amp;w=3840&amp;q=75 3840w\" src=\"/_next/image?url=%2Flocation.png&amp;w=3840&amp;q=75\"/></a></div><div class=\"absolute -bottom-4 -right-4 bg-yellow-400 text-black font-gagalin text-2xl px-6 py-3 rounded-lg\">FREE PARKING</div></div></div></div></section><section id=\"hours\" class=\"bg-black py-20 \"><div class=\"max-w-7xl mx-auto px-4 sm:px-6 lg:px-8\"><div class=\"grid grid-cols-1 md:grid-cols-2 gap-12 items-start\"><div class=\" transition-all duration-700 ease-out will-change-transform will-change-opacity opacity-0 translate-y-6\"><h2 class=\"font-gagalin text-4xl text-[#E5D202] mb-8 text-left\">HOURS*</h2><div class=\"space-y-4 font-league-spartan\"><div class=\"flex justify-between items-center py-2 border-b border-gray-800\"><span class=\"text-white\">Monday - Friday</span><span class=\"text-[#E5D202]\">11:00 AM - 3:00 AM</span></div><div class=\"flex justify-between items-center py-2 border-b border-gray-800\"><span class=\"text-white\">Saturday - Sunday</span><span class=\"text-[#E5D202]\">12:00 PM - 3:00 AM</span></div><span class=\"text-gray-400\">*Check the most recent hours on our Google Business Profile</span></div></div><div class=\" transition-all duration-700 ease-out will-change-transform will-change-opacity opacity-0 translate-y-6\" id=\"contact\"><h2 class=\"font-gagalin text-4xl text-[#E5D202] mb-8 text-left\">CONTACT</h2><div class=\"space-y-4 font-league-spartan\"><div class=\"flex items-center space-x-3\"><div class=\"text-[#E5D202] text-xl\">\ud83d\udcde</div><a href=\"tel:3523762781\"><span class=\"text-white\">(352) 376-2781</span></a></div><div class=\"flex items-center space-x-3\"><div class=\"text-[#E5D202] text-xl\">\ud83d\udccd</div><span class=\"text-white\">Across from Lib West</span></div></div></div></div></div></section><footer class=\"py-12 bg-gray-900 border-t border-yellow-400/20\"><div class=\"max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center\"><div class=\"font-gagalin text-3xl text-[#E5D202] mb-6\">BITE OF POWER</div><p class=\"font-league-spartan text-gray-400 mb-6\">Flavor that packs a punch \u2022 Late-night Mediterranean-American fusion</p><div class=\"flex justify-center gap-4 text-gray-300\"><a href=\"https://www.instagram.com/biteofpower/\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Instagram\" class=\"group p-3 rounded-full border border-white/10 hover:border-yellow-400/40 hover:text-yellow-400 transition-colors\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"currentColor\" class=\"w-5 h-5\"><path d=\"M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9A5.5 5.5 0 0 1 16.5 22h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2zm0 2A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9a3.5 3.5 0 0 0 3.5-3.5v-9A3.5 3.5 0 0 0 16.5 4h-9zm9.75 1.75a1 1 0 1 1 0 2 1 1 0 0 1 0-2zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6z\"></path></svg></a><a href=\"https://www.tiktok.com/@biteofpower\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"TikTok\" class=\"group p-3 rounded-full border border-white/10 hover:border-yellow-400/40 hover:text-yellow-400 transition-colors\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"currentColor\" class=\"w-5 h-5\"><path d=\"M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z\"></path></svg></a><a href=\"mailto:contact@biteofpower.com\" aria-label=\"Email\" class=\"group p-3 rounded-full border border-white/10 hover:border-yellow-400/40 hover:text-yellow-400 transition-colors\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"currentColor\" class=\"w-5 h-5\"><path d=\"M2.25 6.75A2.25 2.25 0 0 1 4.5 4.5h15a2.25 2.25 0 0 1 2.25 2.25v10.5A2.25 2.25 0 0 1 19.5 19.5h-15a2.25 2.25 0 0 1-2.25-2.25V6.75zm2.4-.75a.75.75 0 0 0-.6.3.75.75 0 0 0 .15 1.05l6.6 4.95a2.25 2.25 0 0 0 2.7 0l6.6-4.95a.75.75 0 0 0 .15-1.05.75.75 0 0 0-.6-.3H4.65z\"></path></svg></a></div></div></footer></div><!--$--><!--/$--><script src=\"/_next/static/chunks/c85a7d07e7b82c9a.js\" id=\"_R_\" async=\"\"></script><script>(self.__next_f=self.__next_f||[]).push([0])</script><script>self.__next_f.push([1,\"1:\\\"$Sreact.fragment\\\"\\n2:I[39756,[\\\"/_next/static/chunks/ff1a16fafef87110.js\\\",\\\"/_next/static/chunks/7dd66bdf8a7e5707.js\\\"],\\\"default\\\"]\\n3:I[37457,[\\\"/_next/static/chunks/ff1a16fafef87110.js\\\",\\\"/_next/static/chunks/7dd66bdf8a7e5707.js\\\"],\\\"default\\\"]\\n4:I[82791,[\\\"/_next/static/chunks/ff1a16fafef87110.js\\\",\\\"/_next/static/chunks/becd4e30171e5727.js\\\"],\\\"default\\\"]\\n5:I[5500,[\\\"/_next/static/chunks/ff1a16fafef87110.js\\\",\\\"/_next/static/chunks/becd4e30171e5727.js\\\"],\\\"Image\\\"]\\n6:I[15052,[\\\"/_next/static/chunks/ff1a16fafef87110.js\\\",\\\"/_next/static/chunks/becd4e30171e5727.js\\\"],\\\"default\\\"]\\n13:I[68027,[],\\\"default\\\"]\\n:HL[\\\"/_next/static/chunks/e106510d8de001d0.css\\\",\\\"style\\\"]\\n:HL[\\\"/_next/static/media/7a514bda021b6b92-s.p.b628dbda.woff2\\\",\\\"font\\\",{\\\"crossOrigin\\\":\\\"\\\",\\\"type\\\":\\\"font/woff2\\\"}]\\n\"])</script><script>self.__next_f.push([1,\"0:{\\\"P\\\":null,\\\"b\\\":\\\"8CQvH14OOqp63uSqlBXlX\\\",\\\"p\\\":\\\"\\\",\\\"c\\\":[\\\"\\\",\\\"\\\"],\\\"i\\\":false,\\\"f\\\":[[[\\\"\\\",{\\\"children\\\":[\\\"__PAGE__\\\",{}]},\\\"$undefined\\\",\\\"$undefined\\\",true],[\\\"\\\",[\\\"$\\\",\\\"$1\\\",\\\"c\\\",{\\\"children\\\":[[[\\\"$\\\",\\\"link\\\",\\\"0\\\",{\\\"rel\\\":\\\"stylesheet\\\",\\\"href\\\":\\\"/_next/static/chunks/e106510d8de001d0.css\\\",\\\"precedence\\\":\\\"next\\\",\\\"crossOrigin\\\":\\\"$undefined\\\",\\\"nonce\\\":\\\"$undefined\\\"}]],[\\\"$\\\",\\\"html\\\",null,{\\\"lang\\\":\\\"en\\\",\\\"children\\\":[\\\"$\\\",\\\"body\\\",null,{\\\"className\\\":\\\"league_spartan_2c4a6785-module__DHKeKG__variable antialiased\\\",\\\"children\\\":[\\\"$\\\",\\\"$L2\\\",null,{\\\"parallelRouterKey\\\":\\\"children\\\",\\\"error\\\":\\\"$undefined\\\",\\\"errorStyles\\\":\\\"$undefined\\\",\\\"errorScripts\\\":\\\"$undefined\\\",\\\"template\\\":[\\\"$\\\",\\\"$L3\\\",null,{}],\\\"templateStyles\\\":\\\"$undefined\\\",\\\"templateScripts\\\":\\\"$undefined\\\",\\\"notFound\\\":[[[\\\"$\\\",\\\"title\\\",null,{\\\"children\\\":\\\"404: This page could not be found.\\\"}],[\\\"$\\\",\\\"div\\\",null,{\\\"style\\\":{\\\"fontFamily\\\":\\\"system-ui,\\\\\\\"Segoe UI\\\\\\\",Roboto,Helvetica,Arial,sans-serif,\\\\\\\"Apple Color Emoji\\\\\\\",\\\\\\\"Segoe UI Emoji\\\\\\\"\\\",\\\"height\\\":\\\"100vh\\\",\\\"textAlign\\\":\\\"center\\\",\\\"display\\\":\\\"flex\\\",\\\"flexDirection\\\":\\\"column\\\",\\\"alignItems\\\":\\\"center\\\",\\\"justifyContent\\\":\\\"center\\\"},\\\"children\\\":[\\\"$\\\",\\\"div\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"style\\\",null,{\\\"dangerouslySetInnerHTML\\\":{\\\"__html\\\":\\\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\\\"}}],[\\\"$\\\",\\\"h1\\\",null,{\\\"className\\\":\\\"next-error-h1\\\",\\\"style\\\":{\\\"display\\\":\\\"inline-block\\\",\\\"margin\\\":\\\"0 20px 0 0\\\",\\\"padding\\\":\\\"0 23px 0 0\\\",\\\"fontSize\\\":24,\\\"fontWeight\\\":500,\\\"verticalAlign\\\":\\\"top\\\",\\\"lineHeight\\\":\\\"49px\\\"},\\\"children\\\":404}],[\\\"$\\\",\\\"div\\\",null,{\\\"style\\\":{\\\"display\\\":\\\"inline-block\\\"},\\\"children\\\":[\\\"$\\\",\\\"h2\\\",null,{\\\"style\\\":{\\\"fontSize\\\":14,\\\"fontWeight\\\":400,\\\"lineHeight\\\":\\\"49px\\\",\\\"margin\\\":0},\\\"children\\\":\\\"This page could not be found.\\\"}]}]]}]}]],[]],\\\"forbidden\\\":\\\"$undefined\\\",\\\"unauthorized\\\":\\\"$undefined\\\"}]}]}]]}],{\\\"children\\\":[\\\"__PAGE__\\\",[\\\"$\\\",\\\"$1\\\",\\\"c\\\",{\\\"children\\\":[[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"min-h-screen bg-black text-white\\\",\\\"children\\\":[[\\\"$\\\",\\\"$L4\\\",null,{}],[\\\"$\\\",\\\"section\\\",null,{\\\"className\\\":\\\"relative min-h-screen pt-20 md:pt-24 pb-16 flex items-center justify-center overflow-hidden\\\",\\\"children\\\":[[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"absolute inset-0\\\",\\\"children\\\":[[\\\"$\\\",\\\"$L5\\\",null,{\\\"src\\\":\\\"/bop-hero.png\\\",\\\"alt\\\":\\\"Bite of Power Hero\\\",\\\"fill\\\":true,\\\"className\\\":\\\"object-cover\\\",\\\"priority\\\":true,\\\"sizes\\\":\\\"100vw\\\"}],[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"absolute inset-0 bg-black/60\\\"}]]}],[\\\"$\\\",\\\"$L6\\\",null,{}],[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"relative z-10 text-center px-4\\\",\\\"children\\\":[[\\\"$\\\",\\\"h1\\\",null,{\\\"className\\\":\\\"font-gagalin text-9xl md:text-[12rem] text-transparent bg-clip-text  bg-gradient-to-b from-[#FFF27A] via-[#E5D202] to-[#A89C02]  drop-shadow-[0_2px_6px_rgba(0,0,0,0.3)] mb-6\\\",\\\"children\\\":\\\"BITE OF POWER\\\"}],[\\\"$\\\",\\\"p\\\",null,{\\\"className\\\":\\\"font-league-spartan text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto\\\",\\\"children\\\":\\\"Mediterranean-American fusion that packs a punch.\\\"}],[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"font-league-spartan text-lg md:text-xl text-white/90 mb-8 max-w-3xl mx-auto space-y-2\\\",\\\"children\\\":[[\\\"$\\\",\\\"p\\\",null,{\\\"children\\\":\\\"Hours: Mon-Fri 11:00 AM - 3:00 AM, Sat-Sun 12:00 PM - 3:00 AM\\\"}],[\\\"$\\\",\\\"a\\\",null,{\\\"href\\\":\\\"tel:3523762781\\\",\\\"children\\\":[\\\"$\\\",\\\"p\\\",null,{\\\"children\\\":\\\"Contact: (352) 376-2781\\\"}]}]]}],[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"flex flex-col sm:flex-row gap-4 justify-center items-center mb-8 max-w-4xl mx-auto\\\",\\\"children\\\":[[\\\"$\\\",\\\"a\\\",null,{\\\"href\\\":\\\"https://order.toasttab.com/online/bite-of-power-uf\\\",\\\"target\\\":\\\"_blank\\\",\\\"rel\\\":\\\"noopener noreferrer\\\",\\\"className\\\":\\\"group bg-[#E5D202] text-black font-league-spartan font-bold px-8 py-4 rounded-lg transition-all duration-200 shadow-lg hover:shadow-yellow-400/40 hover:shadow-xl transform hover:-translate-y-0.5 active:translate-y-0 flex items-center gap-3 w-full sm:w-auto justify-center\\\",\\\"children\\\":[[\\\"$\\\",\\\"$L5\\\",null,{\\\"src\\\":\\\"/toast-logo.svg\\\",\\\"alt\\\":\\\"Toast Logo\\\",\\\"width\\\":36,\\\"height\\\":36,\\\"className\\\":\\\"h-8 md:h-9 w-auto object-contain shrink-0\\\"}],[\\\"$\\\",\\\"span\\\",null,{\\\"className\\\":\\\"relative\\\",\\\"children\\\":[[\\\"$\\\",\\\"span\\\",null,{\\\"children\\\":\\\"Order Online (Preferred)*\\\"}],[\\\"$\\\",\\\"span\\\",null,{\\\"className\\\":\\\"absolute -bottom-0.5 left-0 w-0 h-[2px] bg-black transition-all duration-200 group-hover:w-full\\\"}]]}]]}],[\\\"$\\\",\\\"a\\\",null,{\\\"href\\\":\\\"https://www.doordash.com/store/bite-of-power-gainesville-1762205/\\\",\\\"target\\\":\\\"_blank\\\",\\\"rel\\\":\\\"noopener noreferrer\\\",\\\"className\\\":\\\"group bg-[#FF0003] text-white font-league-spartan font-bold px-8 py-4 rounded-lg transition-all duration-200 shadow-lg hover:shadow-red-500/40 hover:shadow-xl transform hover:-translate-y-0.5 active:translate-y-0 flex items-center gap-3 w-full sm:w-auto justify-center\\\",\\\"children\\\":[\\\"$L7\\\",\\\"$L8\\\"]}],\\\"$L9\\\"]}]]}],\\\"$La\\\"]}],\\\"$Lb\\\",\\\"$Lc\\\",\\\"$Ld\\\",\\\"$Le\\\"]}],[\\\"$Lf\\\",\\\"$L10\\\"],\\\"$L11\\\"]}],{},null,false]},null,false],\\\"$L12\\\",false]],\\\"m\\\":\\\"$undefined\\\",\\\"G\\\":[\\\"$13\\\",[\\\"$L14\\\"]],\\\"s\\\":false,\\\"S\\\":true}\\n\"])</script><script>self.__next_f.push([1,\"15:I[25574,[\\\"/_next/static/chunks/ff1a16fafef87110.js\\\",\\\"/_next/static/chunks/becd4e30171e5727.js\\\"],\\\"default\\\"]\\n16:I[99171,[\\\"/_next/static/chunks/ff1a16fafef87110.js\\\",\\\"/_next/static/chunks/becd4e30171e5727.js\\\"],\\\"default\\\"]\\n17:I[97367,[\\\"/_next/static/chunks/ff1a16fafef87110.js\\\",\\\"/_next/static/chunks/7dd66bdf8a7e5707.js\\\"],\\\"OutletBoundary\\\"]\\n19:I[11533,[\\\"/_next/static/chunks/ff1a16fafef87110.js\\\",\\\"/_next/static/chunks/7dd66bdf8a7e5707.js\\\"],\\\"AsyncMetadataOutlet\\\"]\\n1b:I[97367,[\\\"/_next/static/chunks/ff1a16fafef87110.js\\\",\\\"/_next/static/chunks/7dd66bdf8a7e5707.js\\\"],\\\"ViewportBoundary\\\"]\\n1d:I[97367,[\\\"/_next/static/chunks/ff1a16fafef87110.js\\\",\\\"/_next/static/chunks/7dd66bdf8a7e5707.js\\\"],\\\"MetadataBoundary\\\"]\\n1e:\\\"$Sreact.suspense\\\"\\n7:[\\\"$\\\",\\\"$L5\\\",null,{\\\"src\\\":\\\"/doordash-logo.jpg\\\",\\\"alt\\\":\\\"DoorDash Logo\\\",\\\"width\\\":36,\\\"height\\\":36,\\\"className\\\":\\\"h-8 md:h-9 w-auto object-contain shrink-0 rounded\\\"}]\\n8:[\\\"$\\\",\\\"span\\\",null,{\\\"className\\\":\\\"relative\\\",\\\"children\\\":[[\\\"$\\\",\\\"span\\\",null,{\\\"children\\\":\\\"Order on DoorDash\\\"}],[\\\"$\\\",\\\"span\\\",null,{\\\"className\\\":\\\"absolute -bottom-0.5 left-0 w-0 h-[2px] bg-white transition-all duration-200 group-hover:w-full\\\"}]]}]\\n\"])</script><script>self.__next_f.push([1,\"9:[\\\"$\\\",\\\"a\\\",null,{\\\"href\\\":\\\"https://www.ubereats.com/store/bite-of-power/PcgKBBlYTISCSKXgz9IuAA\\\",\\\"target\\\":\\\"_blank\\\",\\\"rel\\\":\\\"noopener noreferrer\\\",\\\"className\\\":\\\"group bg-black text-white font-league-spartan font-bold px-8 py-4 rounded-lg transition-all duration-200 shadow-lg hover:shadow-gray-600/40 hover:shadow-xl transform hover:-translate-y-0.5 active:translate-y-0 flex items-center gap-3 border border-gray-600 w-full sm:w-auto justify-center\\\",\\\"children\\\":[[\\\"$\\\",\\\"$L5\\\",null,{\\\"src\\\":\\\"/uber-logo.jpg\\\",\\\"alt\\\":\\\"Uber Eats Logo\\\",\\\"width\\\":36,\\\"height\\\":36,\\\"className\\\":\\\"h-8 md:h-9 w-auto object-contain shrink-0\\\"}],[\\\"$\\\",\\\"span\\\",null,{\\\"className\\\":\\\"relative\\\",\\\"children\\\":[[\\\"$\\\",\\\"span\\\",null,{\\\"children\\\":\\\"Order on Uber Eats\\\"}],[\\\"$\\\",\\\"span\\\",null,{\\\"className\\\":\\\"absolute -bottom-0.5 left-0 w-0 h-[2px] bg-white transition-all duration-200 group-hover:w-full\\\"}]]}]]}]\\n\"])</script><script>self.__next_f.push([1,\"a:[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"absolute bottom-2 right-0 z-20\\\",\\\"children\\\":[\\\"$\\\",\\\"span\\\",null,{\\\"className\\\":\\\"text-white font-league-spartan px-4 py-2 rounded-lg shadow-lg\\\",\\\"children\\\":\\\"*30% off on pickups\\\"}]}]\\nb:[\\\"$\\\",\\\"section\\\",null,{\\\"id\\\":\\\"menu\\\",\\\"className\\\":\\\"bg-black py-20 \\\",\\\"children\\\":[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"max-w-7xl mx-auto px-4 sm:px-6 lg:px-8\\\",\\\"children\\\":[[\\\"$\\\",\\\"h2\\\",null,{\\\"className\\\":\\\"font-gagalin text-5xl text-[#E5D202] text-center mb-16\\\",\\\"children\\\":\\\"OUR HALAL MENU\\\"}],[\\\"$\\\",\\\"$L15\\\",null,{\\\"children\\\":[\\\"$\\\",\\\"$L16\\\",null,{}]}]]}]}]\\n\"])</script><script>self.__next_f.push([1,\"c:[\\\"$\\\",\\\"section\\\",null,{\\\"id\\\":\\\"about\\\",\\\"className\\\":\\\"bg-gradient-to-b from-gray-900 to-black py-20 \\\",\\\"children\\\":[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"max-w-7xl mx-auto px-4 sm:px-6 lg:px-8\\\",\\\"children\\\":[null,[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"grid grid-cols-1 lg:grid-cols-2 gap-12 items-center\\\",\\\"children\\\":[[\\\"$\\\",\\\"$L15\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"h2\\\",null,{\\\"className\\\":\\\"font-gagalin text-5xl text-[#E5D202] mb-8\\\",\\\"children\\\":\\\"ABOUT US\\\"}],[\\\"$\\\",\\\"p\\\",null,{\\\"className\\\":\\\"font-league-spartan text-xl text-gray-300 mb-6\\\",\\\"children\\\":\\\"Located right across from the University of Florida, Bite of Power brings you the boldest Mediterranean-American fusion flavors in town.\\\"}],[\\\"$\\\",\\\"p\\\",null,{\\\"className\\\":\\\"font-league-spartan text-lg text-gray-400 mb-8\\\",\\\"children\\\":\\\"We\u2019re just a local spot. Late night, after class, whenever\u2014you\u2019ll eat right here.\\\"}],[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"flex items-center space-x-4\\\",\\\"children\\\":[[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"text-4xl\\\",\\\"children\\\":\\\"\ud83d\udccd\\\"}],[\\\"$\\\",\\\"div\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"a\\\",null,{\\\"target\\\":\\\"_blank\\\",\\\"rel\\\":\\\"noopener noreferrer\\\",\\\"href\\\":\\\"https://www.google.com/maps/place/BITE+of+POWER/@29.6522253,-82.3437901,17z/data=!3m1!4b1!4m6!3m5!1s0x88e8a3e7c309054d:0x9f7662e5538bb215!8m2!3d29.6522253!4d-82.3412152!16s%2Fg%2F11mx16cvtz?entry=ttu\\u0026g_ep=EgoyMDI1MDgyNy4wIKXMDSoASAFQAw%3D%3D\\\",\\\"children\\\":[\\\"$\\\",\\\"p\\\",null,{\\\"className\\\":\\\"font-league-spartan font-bold text-[#E5D202]\\\",\\\"children\\\":\\\"Inside of Target Copy, 1412 W University Ave, Gainesville, FL 32603\\\"}]}],[\\\"$\\\",\\\"p\\\",null,{\\\"className\\\":\\\"font-league-spartan text-gray-400\\\",\\\"children\\\":\\\"Perfect for students and locals\\\"}]]}]]}]]}],[\\\"$\\\",\\\"$L15\\\",null,{\\\"className\\\":\\\"relative\\\",\\\"delayMs\\\":120,\\\"children\\\":[[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"h-96 bg-gradient-to-br from-yellow-400/20 to-gray-700 rounded-lg\\\",\\\"children\\\":[\\\"$\\\",\\\"a\\\",null,{\\\"target\\\":\\\"_blank\\\",\\\"rel\\\":\\\"noopener noreferrer\\\",\\\"href\\\":\\\"https://www.google.com/maps/place/BITE+of+POWER/@29.6522253,-82.3437901,17z/data=!3m1!4b1!4m6!3m5!1s0x88e8a3e7c309054d:0x9f7662e5538bb215!8m2!3d29.6522253!4d-82.3412152!16s%2Fg%2F11mx16cvtz?entry=ttu\\u0026g_ep=EgoyMDI1MDgyNy4wIKXMDSoASAFQAw%3D%3D\\\",\\\"children\\\":[\\\"$\\\",\\\"$L5\\\",null,{\\\"src\\\":\\\"/location.png\\\",\\\"alt\\\":\\\"Location\\\",\\\"fill\\\":true,\\\"className\\\":\\\"object-cover rounded-lg\\\",\\\"sizes\\\":\\\"(max-width: 1024px) 100vw, 50vw\\\"}]}]}],[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"absolute -bottom-4 -right-4 bg-yellow-400 text-black font-gagalin text-2xl px-6 py-3 rounded-lg\\\",\\\"children\\\":\\\"FREE PARKING\\\"}]]}]]}]]}]}]\\n\"])</script><script>self.__next_f.push([1,\"d:[\\\"$\\\",\\\"section\\\",null,{\\\"id\\\":\\\"hours\\\",\\\"className\\\":\\\"bg-black py-20 \\\",\\\"children\\\":[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"max-w-7xl mx-auto px-4 sm:px-6 lg:px-8\\\",\\\"children\\\":[null,[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"grid grid-cols-1 md:grid-cols-2 gap-12 items-start\\\",\\\"children\\\":[[\\\"$\\\",\\\"$L15\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"h2\\\",null,{\\\"className\\\":\\\"font-gagalin text-4xl text-[#E5D202] mb-8 text-left\\\",\\\"children\\\":\\\"HOURS*\\\"}],[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"space-y-4 font-league-spartan\\\",\\\"children\\\":[[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"flex justify-between items-center py-2 border-b border-gray-800\\\",\\\"children\\\":[[\\\"$\\\",\\\"span\\\",null,{\\\"className\\\":\\\"text-white\\\",\\\"children\\\":\\\"Monday - Friday\\\"}],[\\\"$\\\",\\\"span\\\",null,{\\\"className\\\":\\\"text-[#E5D202]\\\",\\\"children\\\":\\\"11:00 AM - 3:00 AM\\\"}]]}],[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"flex justify-between items-center py-2 border-b border-gray-800\\\",\\\"children\\\":[[\\\"$\\\",\\\"span\\\",null,{\\\"className\\\":\\\"text-white\\\",\\\"children\\\":\\\"Saturday - Sunday\\\"}],[\\\"$\\\",\\\"span\\\",null,{\\\"className\\\":\\\"text-[#E5D202]\\\",\\\"children\\\":\\\"12:00 PM - 3:00 AM\\\"}]]}],[\\\"$\\\",\\\"span\\\",null,{\\\"className\\\":\\\"text-gray-400\\\",\\\"children\\\":\\\"*Check the most recent hours on our Google Business Profile\\\"}]]}]]}],[\\\"$\\\",\\\"$L15\\\",null,{\\\"id\\\":\\\"contact\\\",\\\"delayMs\\\":120,\\\"children\\\":[[\\\"$\\\",\\\"h2\\\",null,{\\\"className\\\":\\\"font-gagalin text-4xl text-[#E5D202] mb-8 text-left\\\",\\\"children\\\":\\\"CONTACT\\\"}],[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"space-y-4 font-league-spartan\\\",\\\"children\\\":[[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"flex items-center space-x-3\\\",\\\"children\\\":[[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"text-[#E5D202] text-xl\\\",\\\"children\\\":\\\"\ud83d\udcde\\\"}],[\\\"$\\\",\\\"a\\\",null,{\\\"href\\\":\\\"tel:3523762781\\\",\\\"children\\\":[\\\"$\\\",\\\"span\\\",null,{\\\"className\\\":\\\"text-white\\\",\\\"children\\\":\\\"(352) 376-2781\\\"}]}]]}],[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"flex items-center space-x-3\\\",\\\"children\\\":[[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"text-[#E5D202] text-xl\\\",\\\"children\\\":\\\"\ud83d\udccd\\\"}],[\\\"$\\\",\\\"span\\\",null,{\\\"className\\\":\\\"text-white\\\",\\\"children\\\":\\\"Across from Lib West\\\"}]]}]]}]]}]]}]]}]}]\\n\"])</script><script>self.__next_f.push([1,\"e:[\\\"$\\\",\\\"footer\\\",null,{\\\"className\\\":\\\"py-12 bg-gray-900 border-t border-yellow-400/20\\\",\\\"children\\\":[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center\\\",\\\"children\\\":[[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"font-gagalin text-3xl text-[#E5D202] mb-6\\\",\\\"children\\\":\\\"BITE OF POWER\\\"}],[\\\"$\\\",\\\"p\\\",null,{\\\"className\\\":\\\"font-league-spartan text-gray-400 mb-6\\\",\\\"children\\\":\\\"Flavor that packs a punch \u2022 Late-night Mediterranean-American fusion\\\"}],[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"flex justify-center gap-4 text-gray-300\\\",\\\"children\\\":[[\\\"$\\\",\\\"a\\\",null,{\\\"href\\\":\\\"https://www.instagram.com/biteofpower/\\\",\\\"target\\\":\\\"_blank\\\",\\\"rel\\\":\\\"noopener noreferrer\\\",\\\"aria-label\\\":\\\"Instagram\\\",\\\"className\\\":\\\"group p-3 rounded-full border border-white/10 hover:border-yellow-400/40 hover:text-yellow-400 transition-colors\\\",\\\"children\\\":[\\\"$\\\",\\\"svg\\\",null,{\\\"xmlns\\\":\\\"http://www.w3.org/2000/svg\\\",\\\"viewBox\\\":\\\"0 0 24 24\\\",\\\"fill\\\":\\\"currentColor\\\",\\\"className\\\":\\\"w-5 h-5\\\",\\\"children\\\":[\\\"$\\\",\\\"path\\\",null,{\\\"d\\\":\\\"M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9A5.5 5.5 0 0 1 16.5 22h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2zm0 2A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9a3.5 3.5 0 0 0 3.5-3.5v-9A3.5 3.5 0 0 0 16.5 4h-9zm9.75 1.75a1 1 0 1 1 0 2 1 1 0 0 1 0-2zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6z\\\"}]}]}],[\\\"$\\\",\\\"a\\\",null,{\\\"href\\\":\\\"https://www.tiktok.com/@biteofpower\\\",\\\"target\\\":\\\"_blank\\\",\\\"rel\\\":\\\"noopener noreferrer\\\",\\\"aria-label\\\":\\\"TikTok\\\",\\\"className\\\":\\\"group p-3 rounded-full border border-white/10 hover:border-yellow-400/40 hover:text-yellow-400 transition-colors\\\",\\\"children\\\":[\\\"$\\\",\\\"svg\\\",null,{\\\"xmlns\\\":\\\"http://www.w3.org/2000/svg\\\",\\\"viewBox\\\":\\\"0 0 24 24\\\",\\\"fill\\\":\\\"currentColor\\\",\\\"className\\\":\\\"w-5 h-5\\\",\\\"children\\\":[\\\"$\\\",\\\"path\\\",null,{\\\"d\\\":\\\"M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z\\\"}]}]}],[\\\"$\\\",\\\"a\\\",null,{\\\"href\\\":\\\"mailto:contact@biteofpower.com\\\",\\\"aria-label\\\":\\\"Email\\\",\\\"className\\\":\\\"group p-3 rounded-full border border-white/10 hover:border-yellow-400/40 hover:text-yellow-400 transition-colors\\\",\\\"children\\\":[\\\"$\\\",\\\"svg\\\",null,{\\\"xmlns\\\":\\\"http://www.w3.org/2000/svg\\\",\\\"viewBox\\\":\\\"0 0 24 24\\\",\\\"fill\\\":\\\"currentColor\\\",\\\"className\\\":\\\"w-5 h-5\\\",\\\"children\\\":[\\\"$\\\",\\\"path\\\",null,{\\\"d\\\":\\\"M2.25 6.75A2.25 2.25 0 0 1 4.5 4.5h15a2.25 2.25 0 0 1 2.25 2.25v10.5A2.25 2.25 0 0 1 19.5 19.5h-15a2.25 2.25 0 0 1-2.25-2.25V6.75zm2.4-.75a.75.75 0 0 0-.6.3.75.75 0 0 0 .15 1.05l6.6 4.95a2.25 2.25 0 0 0 2.7 0l6.6-4.95a.75.75 0 0 0 .15-1.05.75.75 0 0 0-.6-.3H4.65z\\\"}]}]}]]}]]}]}]\\n\"])</script><script>self.__next_f.push([1,\"f:[\\\"$\\\",\\\"script\\\",\\\"script-0\\\",{\\\"src\\\":\\\"/_next/static/chunks/ff1a16fafef87110.js\\\",\\\"async\\\":true,\\\"nonce\\\":\\\"$undefined\\\"}]\\n10:[\\\"$\\\",\\\"script\\\",\\\"script-1\\\",{\\\"src\\\":\\\"/_next/static/chunks/becd4e30171e5727.js\\\",\\\"async\\\":true,\\\"nonce\\\":\\\"$undefined\\\"}]\\n11:[\\\"$\\\",\\\"$L17\\\",null,{\\\"children\\\":[\\\"$L18\\\",[\\\"$\\\",\\\"$L19\\\",null,{\\\"promise\\\":\\\"$@1a\\\"}]]}]\\n12:[\\\"$\\\",\\\"$1\\\",\\\"h\\\",{\\\"children\\\":[null,[[\\\"$\\\",\\\"$L1b\\\",null,{\\\"children\\\":\\\"$L1c\\\"}],[\\\"$\\\",\\\"meta\\\",null,{\\\"name\\\":\\\"next-size-adjust\\\",\\\"content\\\":\\\"\\\"}]],[\\\"$\\\",\\\"$L1d\\\",null,{\\\"children\\\":[\\\"$\\\",\\\"div\\\",null,{\\\"hidden\\\":true,\\\"children\\\":[\\\"$\\\",\\\"$1e\\\",null,{\\\"fallback\\\":null,\\\"children\\\":\\\"$L1f\\\"}]}]}]]}]\\n14:[\\\"$\\\",\\\"link\\\",\\\"0\\\",{\\\"rel\\\":\\\"stylesheet\\\",\\\"href\\\":\\\"/_next/static/chunks/e106510d8de001d0.css\\\",\\\"precedence\\\":\\\"next\\\",\\\"crossOrigin\\\":\\\"$undefined\\\",\\\"nonce\\\":\\\"$undefined\\\"}]\\n\"])</script><script>self.__next_f.push([1,\"1c:[[\\\"$\\\",\\\"meta\\\",\\\"0\\\",{\\\"charSet\\\":\\\"utf-8\\\"}],[\\\"$\\\",\\\"meta\\\",\\\"1\\\",{\\\"name\\\":\\\"viewport\\\",\\\"content\\\":\\\"width=device-width, initial-scale=1\\\"}]]\\n18:null\\n\"])</script><script>self.__next_f.push([1,\"20:I[27201,[\\\"/_next/static/chunks/ff1a16fafef87110.js\\\",\\\"/_next/static/chunks/7dd66bdf8a7e5707.js\\\"],\\\"IconMark\\\"]\\n\"])</script><script>self.__next_f.push([1,\"1a:{\\\"metadata\\\":[[\\\"$\\\",\\\"title\\\",\\\"0\\\",{\\\"children\\\":\\\"Bite of Power - Mediterranean-American Fusion Restaurant\\\"}],[\\\"$\\\",\\\"meta\\\",\\\"1\\\",{\\\"name\\\":\\\"description\\\",\\\"content\\\":\\\"Late-night Mediterranean-American fusion restaurant across from UF. Bold flavors, heartfelt effort, and flavor that packs a punch!\\\"}],[\\\"$\\\",\\\"link\\\",\\\"2\\\",{\\\"rel\\\":\\\"manifest\\\",\\\"href\\\":\\\"/manifest.json\\\",\\\"crossOrigin\\\":\\\"$undefined\\\"}],[\\\"$\\\",\\\"meta\\\",\\\"3\\\",{\\\"property\\\":\\\"og:title\\\",\\\"content\\\":\\\"Bite of Power - Mediterranean-American Fusion\\\"}],[\\\"$\\\",\\\"meta\\\",\\\"4\\\",{\\\"property\\\":\\\"og:description\\\",\\\"content\\\":\\\"Late-night Mediterranean-American fusion across from UF. Flavor that packs a punch.\\\"}],[\\\"$\\\",\\\"meta\\\",\\\"5\\\",{\\\"property\\\":\\\"og:url\\\",\\\"content\\\":\\\"https://biteofpower.com\\\"}],[\\\"$\\\",\\\"meta\\\",\\\"6\\\",{\\\"property\\\":\\\"og:site_name\\\",\\\"content\\\":\\\"Bite of Power\\\"}],[\\\"$\\\",\\\"meta\\\",\\\"7\\\",{\\\"property\\\":\\\"og:locale\\\",\\\"content\\\":\\\"en_US\\\"}],[\\\"$\\\",\\\"meta\\\",\\\"8\\\",{\\\"property\\\":\\\"og:image\\\",\\\"content\\\":\\\"https://biteofpower.com/bop-hero.png\\\"}],[\\\"$\\\",\\\"meta\\\",\\\"9\\\",{\\\"property\\\":\\\"og:image:width\\\",\\\"content\\\":\\\"1200\\\"}],[\\\"$\\\",\\\"meta\\\",\\\"10\\\",{\\\"property\\\":\\\"og:image:height\\\",\\\"content\\\":\\\"630\\\"}],[\\\"$\\\",\\\"meta\\\",\\\"11\\\",{\\\"property\\\":\\\"og:image:alt\\\",\\\"content\\\":\\\"Bite of Power\\\"}],[\\\"$\\\",\\\"meta\\\",\\\"12\\\",{\\\"property\\\":\\\"og:type\\\",\\\"content\\\":\\\"website\\\"}],[\\\"$\\\",\\\"meta\\\",\\\"13\\\",{\\\"name\\\":\\\"twitter:card\\\",\\\"content\\\":\\\"summary_large_image\\\"}],[\\\"$\\\",\\\"meta\\\",\\\"14\\\",{\\\"name\\\":\\\"twitter:title\\\",\\\"content\\\":\\\"Bite of Power - Mediterranean-American Fusion\\\"}],[\\\"$\\\",\\\"meta\\\",\\\"15\\\",{\\\"name\\\":\\\"twitter:description\\\",\\\"content\\\":\\\"Late-night Mediterranean-American fusion across from UF.\\\"}],[\\\"$\\\",\\\"meta\\\",\\\"16\\\",{\\\"name\\\":\\\"twitter:image\\\",\\\"content\\\":\\\"https://biteofpower.com/bop-hero.png\\\"}],[\\\"$\\\",\\\"link\\\",\\\"17\\\",{\\\"rel\\\":\\\"shortcut icon\\\",\\\"href\\\":\\\"/favicon.ico\\\"}],[\\\"$\\\",\\\"link\\\",\\\"18\\\",{\\\"rel\\\":\\\"icon\\\",\\\"href\\\":\\\"/favicon.ico\\\",\\\"sizes\\\":\\\"any\\\"}],[\\\"$\\\",\\\"link\\\",\\\"19\\\",{\\\"rel\\\":\\\"icon\\\",\\\"href\\\":\\\"/favicon.png\\\",\\\"type\\\":\\\"image/png\\\",\\\"sizes\\\":\\\"32x32\\\"}],[\\\"$\\\",\\\"link\\\",\\\"20\\\",{\\\"rel\\\":\\\"icon\\\",\\\"href\\\":\\\"/favicon.png\\\",\\\"type\\\":\\\"image/png\\\",\\\"sizes\\\":\\\"16x16\\\"}],[\\\"$\\\",\\\"link\\\",\\\"21\\\",{\\\"rel\\\":\\\"apple-touch-icon\\\",\\\"href\\\":\\\"/favicon.png\\\",\\\"sizes\\\":\\\"180x180\\\",\\\"type\\\":\\\"image/png\\\"}],[\\\"$\\\",\\\"$L20\\\",\\\"22\\\",{}]],\\\"error\\\":null,\\\"digest\\\":\\\"$undefined\\\"}\\n\"])</script><script>self.__next_f.push([1,\"1f:\\\"$1a:metadata\\\"\\n\"])</script></body></html>"
+    }
+  }
+}
