@@ -19,7 +19,7 @@ export async function generateAndDeploySite(
   const { prompt, siteFolderName } = opts;
 
   const openai = new OpenAI({
-    apiKey: "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",
+    apiKey: "Enter Your OpenAI API Key Here",
   });
 
   // 1. Generate website code via OpenAI
