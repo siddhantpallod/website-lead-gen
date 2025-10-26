@@ -121,7 +121,7 @@ export default function SettingsModal({
 
   return (
     <div
-      className="fixed inset-0 bg-white z-50 animate-fade-in overflow-hidden"
+      className="fixed inset-0 bg-white z-50 animate-fade-in overflow-hidden flex flex-col"
       role="dialog"
       aria-modal="true"
       aria-labelledby="settings-title"
@@ -129,7 +129,7 @@ export default function SettingsModal({
     >
       {/* Header */}
       <div className="p-6 border-b border-gray-200 flex items-center justify-between bg-white">
-        <div className="max-w-4xl w-full mx-auto flex items-center justify-between">
+        <div className="w-full flex items-center justify-between">
           <h2 id="settings-title" className="text-2xl font-semibold text-black">
             Settings
           </h2>
@@ -158,7 +158,7 @@ export default function SettingsModal({
 
       {/* Tabs */}
       <div className="border-b border-gray-200 px-6 bg-white">
-        <div className="max-w-4xl w-full mx-auto flex space-x-4">
+        <div className="w-full flex space-x-4">
           <button
             onClick={() => setActiveTab('profile')}
             className={`py-4 px-2 border-b-2 transition-colors font-medium cursor-pointer ${
@@ -183,7 +183,7 @@ export default function SettingsModal({
       </div>
 
       {/* Content */}
-      <div className="flex-1 overflow-y-auto p-6 bg-white max-w-4xl mx-auto">
+      <div className="flex-1 overflow-y-auto p-6 bg-white max-h-[calc(100vh-200px)]">
         {activeTab === 'profile' ? (
           <div className="space-y-6">
             {!isEditingProfile ? (
@@ -220,7 +220,9 @@ export default function SettingsModal({
                           Portfolio Website
                         </label>
                         <div className="flex items-center justify-between bg-gray-50 p-4 rounded-xl">
-                          <span className="text-gray-900">{formData.portfolio}</span>
+                          <span className={formData.portfolio && formData.portfolio !== 'https://yourportfolio.com' ? 'text-gray-900' : 'text-gray-400'}>
+                            {formData.portfolio && formData.portfolio !== 'https://yourportfolio.com' ? formData.portfolio : 'No portfolio website'}
+                          </span>
                         </div>
                       </div>
                       <div>
@@ -327,12 +329,12 @@ export default function SettingsModal({
                         <input
                           id="portfolio"
                           type="url"
-                          value={formData.portfolio}
-                          onChange={(e) => updateField('portfolio', e.target.value)}
+                          value={formData.portfolio === 'https://yourportfolio.com' ? '' : formData.portfolio}
+                          onChange={(e) => updateField('portfolio', e.target.value || 'https://yourportfolio.com')}
                           className={`w-full px-4 py-3 bg-gray-50 border rounded-xl text-black placeholder-gray-500 focus:outline-none focus:border-black focus:bg-white transition-all duration-200 ${
                             errors.portfolio ? 'border-red-300' : 'border-gray-200'
                           }`}
-                          placeholder="https://yourportfolio.com"
+                          placeholder="Enter your portfolio website (optional)"
                           aria-invalid={errors.portfolio ? 'true' : 'false'}
                         />
                         {errors.portfolio && (
