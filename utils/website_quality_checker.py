@@ -5,6 +5,8 @@ python website_quality_checker.py <url> [--output out.json]
 
 """
 from __future__ import annotations
+from simplevison import ai_verdict
+import asyncio
 import argparse
 import json
 from urllib.parse import urlparse
@@ -27,6 +29,13 @@ from analyzer import (
 )
 from scorer import compute_scores
 from utils import simple_keyword_relevance
+# Load .env so OPENAI_API_KEY can be picked up from a local file
+from dotenv import load_dotenv
+load_dotenv()
+
+# AI quick suggester (optional). Returns short 2-5 word suggestions.
+from ai_quick_suggester import generate_suggestions
+# ai_vision removed; using simplevison.ai_verdict
 
 import subprocess
 
@@ -56,7 +65,7 @@ def try_run_lighthouse(url: str, timeout: int = 30) -> dict | None:
     return None
 
 
-def analyze(url: str) -> dict:
+def analyze(url: str, use_ai: bool = True) -> dict:
     status, html, headers, elapsed_s, content_len = fetch_url(url)
     # record fetch-level errors (SSL verification, DNS, connection, etc.) so the analyzer
     # can continue and present a useful result rather than crashing.
@@ -167,6 +176,16 @@ def analyze(url: str) -> dict:
 
     # attach raw parsed
     measures['parsed'] = parsed
+
+    # === quick AI suggestions (2-5 words each) ===
+    if use_ai:
+        try:
+            measures['ai_suggestions'] = generate_suggestions(measures)
+        except Exception:
+            measures['ai_suggestions'] = []
+    else:
+        measures['ai_suggestions'] = []
+    # === end AI suggestions ===
     return measures
 
 
@@ -194,10 +213,46 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('url')
     ap.add_argument('--output','-o', help='Output JSON file')
+    ap.add_argument('--no-ai', action='store_true', help='Disable AI suggestions even if OPENAI_API_KEY is present')
+    ap.add_argument('--log-ai', help='Write AI prompt and response to a log file')
     args = ap.parse_args()
     url = args.url
-    report = analyze(url)
+    # By default we attempt AI suggestions unless user passes --no-ai. The suggester itself
+    # will fall back to heuristics if no OPENAI_API_KEY is present.
+    use_ai = not args.no_ai
+    if os.environ.get('OPENAI_API_KEY'):
+        print('OPENAI_API_KEY found in environment; AI suggestions (OpenAI) will be attempted.')
+    else:
+        print('No OPENAI_API_KEY found in environment; using heuristic suggestions fallback.')
+
+    # analyze the site and collect measures
+    report = analyze(url, use_ai=use_ai)
+
+    # === run the simplevision ai_verdict and attach/apply its recommendation ===
+    try:
+        verdict = asyncio.run(ai_verdict(url))
+        # store full verdict in measures
+        report['ai_verdict'] = verdict
+        decision = (verdict.get('redesign_candidate') or '').upper()
+        if decision == 'YES':
+            report['ai_redo_recommendation'] = {'decision': 'YES', 'delta': -30, 'raw': verdict}
+        elif decision == 'NO':
+            report['ai_redo_recommendation'] = {'decision': 'NO', 'delta': +30, 'raw': verdict}
+        else:
+            report['ai_redo_recommendation'] = {'decision': decision or 'UNKNOWN', 'delta': 0, 'raw': verdict}
+    except Exception as e:
+        report['ai_verdict_error'] = str(e)
+
+    # Build final report and apply any AI redo adjustment to total
     out = build_report(url, report)
+    # If ai_redo_recommendation present, adjust total
+    if 'ai_redo_recommendation' in report:
+        adj = report['ai_redo_recommendation'].get('delta',0)
+        total = out['scores'].get('total',0)
+        new_total = max(0, min(100, total + adj))
+        out['scores']['total'] = new_total
+        out['scores']['ai_redo_delta'] = adj
+        out['scores']['ai_redo_decision'] = report['ai_redo_recommendation'].get('decision')
     if args.output:
         with open(args.output,'w',encoding='utf-8') as f:
             json.dump(out, f, indent=2, default=str)
