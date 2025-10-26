@@ -7,7 +7,7 @@ import fetch from "node-fetch";
 export async function generateAndDeploySite(opts) {
     const { prompt, siteFolderName } = opts;
     const openaiApiKey = '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';
-    const vercelToken = '0ZbNJKYcIy0psAILa2vHGN1N';
+    const vercelToken = 'Replace With Your Vercel Token';
     const vercelProjectId = 'prj_wORquIIFJ5byz60EvpfYsqEABm4I';
     if (!openaiApiKey)
         throw new Error("Missing OPENAI_API_KEY");
