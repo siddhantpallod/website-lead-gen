@@ -1,4 +1,4 @@
-import { generateAndDeploySite } from "./generateAndDeploySite";
+import { generateAndDeploySite } from "./generateAndDeploy";
 
 (async () => {
   const { url } = await generateAndDeploySite({

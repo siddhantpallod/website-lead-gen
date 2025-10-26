@@ -212,53 +212,48 @@ def build_report(url: str, measures: dict) -> dict:
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('url')
-    ap.add_argument('--output','-o', help='Output JSON file')
     ap.add_argument('--no-ai', action='store_true', help='Disable AI suggestions even if OPENAI_API_KEY is present')
     ap.add_argument('--log-ai', help='Write AI prompt and response to a log file')
     args = ap.parse_args()
+
     url = args.url
-    # By default we attempt AI suggestions unless user passes --no-ai. The suggester itself
-    # will fall back to heuristics if no OPENAI_API_KEY is present.
     use_ai = not args.no_ai
     if os.environ.get('OPENAI_API_KEY'):
-        print('OPENAI_API_KEY found in environment; AI suggestions (OpenAI) will be attempted.')
+        print('OPENAI_API_KEY found; AI suggestions will be attempted.')
     else:
-        print('No OPENAI_API_KEY found in environment; using heuristic suggestions fallback.')
+        print('No OPENAI_API_KEY; using heuristic suggestions fallback.')
 
-    # analyze the site and collect measures
     report = analyze(url, use_ai=use_ai)
 
-    # === run the simplevision ai_verdict and attach/apply its recommendation ===
     try:
         verdict = asyncio.run(ai_verdict(url))
-        # store full verdict in measures
         report['ai_verdict'] = verdict
         decision = (verdict.get('redesign_candidate') or '').upper()
         if decision == 'YES':
             report['ai_redo_recommendation'] = {'decision': 'YES', 'delta': -30, 'raw': verdict}
+            report['scores']['total'] = max(0, report['scores'].get('total',0) - 30)
         elif decision == 'NO':
             report['ai_redo_recommendation'] = {'decision': 'NO', 'delta': +30, 'raw': verdict}
+            report['scores']['total'] = min(100, report['scores'].get('total',0) + 30)
         else:
             report['ai_redo_recommendation'] = {'decision': decision or 'UNKNOWN', 'delta': 0, 'raw': verdict}
     except Exception as e:
         report['ai_verdict_error'] = str(e)
 
-    # Build final report and apply any AI redo adjustment to total
     out = build_report(url, report)
-    # If ai_redo_recommendation present, adjust total
+
+    # Apply AI redo delta
     if 'ai_redo_recommendation' in report:
         adj = report['ai_redo_recommendation'].get('delta',0)
         total = out['scores'].get('total',0)
-        new_total = max(0, min(100, total + adj))
-        out['scores']['total'] = new_total
+        out['scores']['total'] = max(0, min(100, total + adj))
         out['scores']['ai_redo_delta'] = adj
         out['scores']['ai_redo_decision'] = report['ai_redo_recommendation'].get('decision')
-    if args.output:
-        with open(args.output,'w',encoding='utf-8') as f:
-            json.dump(out, f, indent=2, default=str)
-        print(f'Wrote {args.output}')
-    else:
-        print(json.dumps(out, indent=2, default=str))
+
+    # Always write to analysis.json
+    with open('analysis.json','w',encoding='utf-8') as f:
+        json.dump(out, f, indent=2, default=str)
+    print('Wrote analysis.json')
 
 if __name__ == '__main__':
     main()

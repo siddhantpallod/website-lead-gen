@@ -24,6 +24,8 @@ Return format (MUST follow exactly):
 If the site looks outdated, unprofessional, or poorly designed:
 {
   "redesign_candidate": "YES",
+  "business_name": "The name of the business as shown on the site.",
+  "site_description": "The purpose of this site is [briefly describe the site's purpose based on visible content].",
   "reasons": [
     "Outdated design elements",
     "Poor color contrast",
@@ -33,7 +35,7 @@ If the site looks outdated, unprofessional, or poorly designed:
 
 If the site looks modern, professional, and fine:
 {
-  "redesign_candidate": "NO"
+  "redesign_candidate": "NO",
 }
 
 Rules:
@@ -74,7 +76,7 @@ def analyze_screenshot_with_gpt(image_path):
             {"type": "image_url", "image_url": {"url": f"data:image/png;base64,{image_b64}"}}
         ]}
     ],
-    max_tokens=50,
+    max_tokens=100,
 )
 
     result = json.loads(response.choices[0].message.content)
