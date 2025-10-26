@@ -104,7 +104,7 @@ def find_local_businesses(
 # Test case
 # ------------------------------
 if __name__ == "__main__":
-    API_KEY = "AIzaSyAhN10XGmUBmhALNSmxqppYyYom_cPQh0Y"  # Replace with your real API key
+    API_KEY = "Replace with Google API Key"  # Replace with your real API key
     location = "29.6516,-82.3248"  # Gainesville, FL
     radius = 5000  # 5 km
     business_type = "restaurant"
