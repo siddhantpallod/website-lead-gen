@@ -16,6 +16,8 @@ export interface FormErrors {
   email?: string;
   company?: string;
   portfolio?: string;
+  location?: string;
+  industry?: string;
 }
 
 export interface OnboardingFormData {
@@ -23,5 +25,7 @@ export interface OnboardingFormData {
   email: string;
   company: string;
   portfolio: string;
+  location: string;
+  industry: string;
 }
 

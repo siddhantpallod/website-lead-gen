@@ -73,7 +73,7 @@ export default function Home() {
     return STATUS_COLORS[status as LeadStatus] || 'bg-gray-200 text-gray-900';
   }, []);
 
-  const handleProfileUpdate = useCallback((data: { name: string; email: string; company: string; portfolio: string }) => {
+  const handleProfileUpdate = useCallback((data: { name: string; email: string; company: string; portfolio: string; location: string; industry: string }) => {
     setName(data.name);
     // In a real app, you would save this to your backend
     console.log('Profile updated:', data);

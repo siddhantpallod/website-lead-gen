@@ -1,8 +1,9 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import { useRouter } from 'next/navigation';
 import { validateOnboardingForm } from '@/lib/utils/validation';
+import { useDropdownOutside } from '@/lib/hooks/useClickOutside';
 import type { OnboardingFormData, FormErrors } from '@/types';
 
 export default function Onboarding() {
@@ -11,16 +12,28 @@ export default function Onboarding() {
     name: '',
     email: '',
     company: '',
-    portfolio: ''
+    portfolio: '',
+    location: '',
+    industry: ''
   });
   const [errors, setErrors] = useState<FormErrors>({});
+  const [isIndustryOpen, setIsIndustryOpen] = useState(false);
+  const industryRef = useRef<HTMLDivElement | null>(null);
   const router = useRouter();
+
+  useDropdownOutside(industryRef, () => {
+    setIsIndustryOpen(false);
+  });
 
   const updateField = (field: keyof OnboardingFormData, value: string) => {
     setFormData(prev => ({ ...prev, [field]: value }));
     // Clear error when user types
     if (errors[field]) {
       setErrors(prev => ({ ...prev, [field]: undefined }));
+    }
+    // Close industry dropdown when selection is made
+    if (field === 'industry') {
+      setIsIndustryOpen(false);
     }
   };
 
@@ -35,6 +48,13 @@ export default function Onboarding() {
       const stepErrors = validateOnboardingForm(formData);
       newErrors.company = stepErrors.company;
       newErrors.portfolio = stepErrors.portfolio;
+    } else if (step === 4) {
+      if (!formData.location) {
+        newErrors.location = 'Location is required';
+      }
+      if (!formData.industry) {
+        newErrors.industry = 'Industry is required';
+      }
     }
 
     setErrors(newErrors);
@@ -45,9 +65,9 @@ export default function Onboarding() {
   };
 
   const handleNext = () => {
-    if (currentStep < 4) {
+    if (currentStep < 5) {
       // Validate before proceeding
-      if (currentStep === 2 || currentStep === 3) {
+      if (currentStep === 2 || currentStep === 3 || currentStep === 4) {
         if (!validateStep(currentStep)) {
           return; // Don't proceed if validation fails
         }
@@ -82,10 +102,11 @@ export default function Onboarding() {
               </p>
             </div>
             <div className="flex justify-center space-x-2 pt-4 animate-fade-in" style={{ animationDelay: '0.4s' }}>
-              <div className="w-2 h-2 bg-black rounded-full" aria-label="Step 1 of 4" role="status" aria-current="step"></div>
-              <div className="w-2 h-2 bg-gray-300 rounded-full" aria-label="Step 2 of 4" role="status"></div>
-              <div className="w-2 h-2 bg-gray-300 rounded-full" aria-label="Step 3 of 4" role="status"></div>
-              <div className="w-2 h-2 bg-gray-300 rounded-full" aria-label="Step 4 of 4" role="status"></div>
+              <div className="w-2 h-2 bg-black rounded-full" aria-label="Step 1 of 5" role="status" aria-current="step"></div>
+              <div className="w-2 h-2 bg-gray-300 rounded-full" aria-label="Step 2 of 5" role="status"></div>
+              <div className="w-2 h-2 bg-gray-300 rounded-full" aria-label="Step 3 of 5" role="status"></div>
+              <div className="w-2 h-2 bg-gray-300 rounded-full" aria-label="Step 4 of 5" role="status"></div>
+              <div className="w-2 h-2 bg-gray-300 rounded-full" aria-label="Step 5 of 5" role="status"></div>
             </div>
           </div>
         );
@@ -146,10 +167,11 @@ export default function Onboarding() {
               </div>
             </div>
             <div className="flex justify-center space-x-2 pt-4 animate-fade-in" style={{ animationDelay: '0.4s' }}>
-              <div className="w-2 h-2 bg-black rounded-full" aria-label="Step 1 of 4" role="status"></div>
-              <div className="w-2 h-2 bg-black rounded-full" aria-label="Step 2 of 4" role="status" aria-current="step"></div>
-              <div className="w-2 h-2 bg-gray-300 rounded-full" aria-label="Step 3 of 4" role="status"></div>
-              <div className="w-2 h-2 bg-gray-300 rounded-full" aria-label="Step 4 of 4" role="status"></div>
+              <div className="w-2 h-2 bg-black rounded-full" aria-label="Step 1 of 5" role="status"></div>
+              <div className="w-2 h-2 bg-black rounded-full" aria-label="Step 2 of 5" role="status" aria-current="step"></div>
+              <div className="w-2 h-2 bg-gray-300 rounded-full" aria-label="Step 3 of 5" role="status"></div>
+              <div className="w-2 h-2 bg-gray-300 rounded-full" aria-label="Step 4 of 5" role="status"></div>
+              <div className="w-2 h-2 bg-gray-300 rounded-full" aria-label="Step 5 of 5" role="status"></div>
             </div>
           </div>
         );
@@ -208,15 +230,125 @@ export default function Onboarding() {
               </div>
             </div>
             <div className="flex justify-center space-x-2 pt-4 animate-fade-in" style={{ animationDelay: '0.4s' }}>
-              <div className="w-2 h-2 bg-black rounded-full" aria-label="Step 1 of 4" role="status"></div>
-              <div className="w-2 h-2 bg-black rounded-full" aria-label="Step 2 of 4" role="status"></div>
-              <div className="w-2 h-2 bg-black rounded-full" aria-label="Step 3 of 4" role="status" aria-current="step"></div>
-              <div className="w-2 h-2 bg-gray-300 rounded-full" aria-label="Step 4 of 4" role="status"></div>
+              <div className="w-2 h-2 bg-black rounded-full" aria-label="Step 1 of 5" role="status"></div>
+              <div className="w-2 h-2 bg-black rounded-full" aria-label="Step 2 of 5" role="status"></div>
+              <div className="w-2 h-2 bg-black rounded-full" aria-label="Step 3 of 5" role="status" aria-current="step"></div>
+              <div className="w-2 h-2 bg-gray-300 rounded-full" aria-label="Step 4 of 5" role="status"></div>
+              <div className="w-2 h-2 bg-gray-300 rounded-full" aria-label="Step 5 of 5" role="status"></div>
             </div>
           </div>
         );
 
       case 4:
+        return (
+          <div className="space-y-6 animate-fade-in">
+            <div className="text-center animate-slide-up">
+              <h2 className="text-2xl font-semibold text-black mb-2">Additional Information</h2>
+              <p className="text-gray-600">Help us understand your market better</p>
+            </div>
+            <div className="space-y-4 animate-slide-up" style={{ animationDelay: '0.2s' }}>
+              <div>
+                <label htmlFor="location" className="block text-sm font-medium text-gray-700 mb-2">
+                  Location *
+                </label>
+                <input
+                  id="location"
+                  type="text"
+                  value={formData.location}
+                  onChange={(e) => updateField('location', e.target.value)}
+                  className={`w-full px-4 py-3 bg-gray-50 border rounded-xl text-black placeholder-gray-500 focus:outline-none focus:border-black focus:bg-white transition-all duration-200 hover:scale-[1.02] focus:scale-[1.02] ${
+                    errors.location ? 'border-red-300' : 'border-gray-200'
+                  }`}
+                  placeholder="Enter your location"
+                  aria-required="true"
+                  aria-invalid={errors.location ? 'true' : 'false'}
+                  aria-describedby={errors.location ? 'location-error' : undefined}
+                />
+                {errors.location && (
+                  <p id="location-error" className="mt-1 text-sm text-red-600" role="alert">
+                    {errors.location}
+                  </p>
+                )}
+              </div>
+              <div>
+                <label htmlFor="industry" className="block text-sm font-medium text-gray-700 mb-2">
+                  Industry *
+                </label>
+                <div className="relative" ref={industryRef}>
+                  <button
+                    type="button"
+                    onClick={() => setIsIndustryOpen(!isIndustryOpen)}
+                    className={`flex items-center justify-between w-full px-4 py-3 bg-gray-100 border rounded-xl text-left hover:bg-gray-200 transition-colors text-gray-700 hover:text-black cursor-pointer ${
+                      errors.industry ? 'border-red-300' : 'border-gray-200'
+                    } ${formData.industry ? 'text-black' : ''}`}
+                    aria-required="true"
+                    aria-invalid={errors.industry ? 'true' : 'false'}
+                    aria-describedby={errors.industry ? 'industry-error' : undefined}
+                    aria-expanded={isIndustryOpen}
+                  >
+                    <span className="text-sm font-medium">
+                      {formData.industry 
+                        ? formData.industry.charAt(0).toUpperCase() + formData.industry.slice(1).replace(/-/g, ' ')
+                        : 'Select your industry'}
+                    </span>
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </button>
+
+                  {isIndustryOpen && (
+                    <div 
+                      className="absolute right-0 left-0 mt-2 bg-white border border-gray-200 rounded-xl shadow-lg z-10 animate-fade-in max-h-60 overflow-y-auto"
+                      role="menu"
+                      aria-orientation="vertical"
+                    >
+                      <div className="py-2">
+                        {['technology', 'healthcare', 'finance', 'retail', 'real-estate', 'education', 'manufacturing', 'hospitality', 'consulting', 'marketing', 'legal', 'other'].map((industry) => (
+                          <button
+                            key={industry}
+                            type="button"
+                            onClick={() => updateField('industry', industry)}
+                            className={`w-full text-left px-4 py-3 text-sm hover:bg-gray-50 transition-colors cursor-pointer ${
+                              formData.industry === industry ? 'text-black bg-gray-50' : 'text-gray-600'
+                            }`}
+                            role="menuitem"
+                          >
+                            {industry === 'real-estate' ? 'Real Estate' : 
+                             industry === 'retail' ? 'Retail & E-commerce' :
+                             industry === 'finance' ? 'Finance & Banking' :
+                             industry === 'hospitality' ? 'Hospitality & Tourism' :
+                             industry === 'marketing' ? 'Marketing & Advertising' :
+                             industry === 'legal' ? 'Legal Services' :
+                             industry === 'technology' ? 'Technology' :
+                             industry === 'healthcare' ? 'Healthcare' :
+                             industry === 'education' ? 'Education' :
+                             industry === 'manufacturing' ? 'Manufacturing' :
+                             industry === 'consulting' ? 'Consulting' :
+                             industry.charAt(0).toUpperCase() + industry.slice(1)}
+                          </button>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+                </div>
+                {errors.industry && (
+                  <p id="industry-error" className="mt-1 text-sm text-red-600" role="alert">
+                    {errors.industry}
+                  </p>
+                )}
+              </div>
+            </div>
+            <div className="flex justify-center space-x-2 pt-4 animate-fade-in" style={{ animationDelay: '0.4s' }}>
+              <div className="w-2 h-2 bg-black rounded-full" aria-label="Step 1 of 5" role="status"></div>
+              <div className="w-2 h-2 bg-black rounded-full" aria-label="Step 2 of 5" role="status"></div>
+              <div className="w-2 h-2 bg-black rounded-full" aria-label="Step 3 of 5" role="status"></div>
+              <div className="w-2 h-2 bg-black rounded-full" aria-label="Step 4 of 5" role="status" aria-current="step"></div>
+              <div className="w-2 h-2 bg-gray-300 rounded-full" aria-label="Step 5 of 5" role="status"></div>
+            </div>
+          </div>
+        );
+
+      case 5:
         return (
           <div className="text-center space-y-6 animate-fade-in">
             <div className="w-12 h-12 bg-black rounded-xl mx-auto flex items-center justify-center">
@@ -261,10 +393,11 @@ export default function Onboarding() {
               </ul>
             </div>
             <div className="flex justify-center space-x-2 pt-4 animate-fade-in" style={{ animationDelay: '1.2s' }}>
-              <div className="w-2 h-2 bg-black rounded-full" aria-label="Step 1 of 4" role="status"></div>
-              <div className="w-2 h-2 bg-black rounded-full" aria-label="Step 2 of 4" role="status"></div>
-              <div className="w-2 h-2 bg-black rounded-full" aria-label="Step 3 of 4" role="status"></div>
-              <div className="w-2 h-2 bg-black rounded-full" aria-label="Step 4 of 4" role="status" aria-current="step"></div>
+              <div className="w-2 h-2 bg-black rounded-full" aria-label="Step 1 of 5" role="status"></div>
+              <div className="w-2 h-2 bg-black rounded-full" aria-label="Step 2 of 5" role="status"></div>
+              <div className="w-2 h-2 bg-black rounded-full" aria-label="Step 3 of 5" role="status"></div>
+              <div className="w-2 h-2 bg-black rounded-full" aria-label="Step 4 of 5" role="status"></div>
+              <div className="w-2 h-2 bg-black rounded-full" aria-label="Step 5 of 5" role="status" aria-current="step"></div>
             </div>
           </div>
         );
@@ -297,9 +430,9 @@ export default function Onboarding() {
             <button
               onClick={handleNext}
               className="px-8 py-3 bg-black text-white font-medium rounded-xl hover:bg-gray-800 transition-all duration-200 hover:scale-105 active:scale-95"
-              aria-label={currentStep === 4 ? 'Complete onboarding' : 'Go to next step'}
+              aria-label={currentStep === 5 ? 'Complete onboarding' : 'Go to next step'}
             >
-              {currentStep === 4 ? 'Get Started' : 'Next'}
+              {currentStep === 5 ? 'Get Started' : 'Next'}
             </button>
           </div>
         </div>

@@ -1,14 +1,14 @@
 'use client';
 
 import { useState, useRef } from 'react';
-import { useModalOutside } from '@/lib/hooks/useClickOutside';
+import { useModalOutside, useDropdownOutside } from '@/lib/hooks/useClickOutside';
 import { useKeyboard } from '@/lib/hooks/useKeyboard';
 
 interface SettingsModalProps {
   isOpen: boolean;
   onClose: () => void;
   currentName: string;
-  onUpdate: (data: { name: string; email: string; company: string; portfolio: string }) => void;
+  onUpdate: (data: { name: string; email: string; company: string; portfolio: string; location: string; industry: string }) => void;
   onLogout: () => void;
   onDeleteAccount: () => void;
 }
@@ -27,11 +27,22 @@ export default function SettingsModal({
     name: currentName,
     email: 'user@example.com',
     company: 'Your Company',
-    portfolio: 'https://yourportfolio.com'
+    portfolio: 'https://yourportfolio.com',
+    location: '',
+    industry: ''
   });
   const [errors, setErrors] = useState<{ [key: string]: string }>({});
+  const [isIndustryOpen, setIsIndustryOpen] = useState(false);
+  const [wasEditing, setWasEditing] = useState(false);
 
   const modalRef = useRef<HTMLDivElement | null>(null);
+  const industryRef = useRef<HTMLDivElement | null>(null);
+
+  useDropdownOutside(industryRef, () => {
+    if (wasEditing) {
+      setIsIndustryOpen(false);
+    }
+  });
 
   useKeyboard('Escape', onClose);
   
@@ -60,6 +71,14 @@ export default function SettingsModal({
 
     if (formData.portfolio.trim() && !isValidUrl(formData.portfolio)) {
       newErrors.portfolio = 'Please enter a valid URL';
+    }
+
+    if (!formData.location.trim()) {
+      newErrors.location = 'Location is required';
+    }
+
+    if (!formData.industry.trim()) {
+      newErrors.industry = 'Industry is required';
     }
 
     setErrors(newErrors);
@@ -92,6 +111,9 @@ export default function SettingsModal({
     setFormData(prev => ({ ...prev, [field]: value }));
     if (errors[field]) {
       setErrors(prev => ({ ...prev, [field]: undefined }));
+    }
+    if (field === 'industry') {
+      setIsIndustryOpen(false);
     }
   };
 
@@ -201,6 +223,26 @@ export default function SettingsModal({
                           <span className="text-gray-900">{formData.portfolio}</span>
                         </div>
                       </div>
+                      <div>
+                        <label className="block text-sm font-medium text-gray-700 mb-2">
+                          Location
+                        </label>
+                        <div className="flex items-center justify-between bg-gray-50 p-4 rounded-xl">
+                          <span className="text-gray-900">{formData.location || 'Not set'}</span>
+                        </div>
+                      </div>
+                      <div>
+                        <label className="block text-sm font-medium text-gray-700 mb-2">
+                          Industry
+                        </label>
+                        <div className="flex items-center justify-between bg-gray-50 p-4 rounded-xl">
+                          <span className="text-gray-900">
+                            {formData.industry 
+                              ? formData.industry.charAt(0).toUpperCase() + formData.industry.slice(1).replace(/-/g, ' ')
+                              : 'Not set'}
+                          </span>
+                        </div>
+                      </div>
                     </div>
                     <button
                       onClick={() => setIsEditingProfile(true)}
@@ -299,6 +341,98 @@ export default function SettingsModal({
                           </p>
                         )}
                       </div>
+                      <div>
+                        <label htmlFor="location" className="block text-sm font-medium text-gray-700 mb-2">
+                          Location *
+                        </label>
+                        <input
+                          id="location"
+                          type="text"
+                          value={formData.location}
+                          onChange={(e) => updateField('location', e.target.value)}
+                          className={`w-full px-4 py-3 bg-gray-50 border rounded-xl text-black placeholder-gray-500 focus:outline-none focus:border-black focus:bg-white transition-all duration-200 ${
+                            errors.location ? 'border-red-300' : 'border-gray-200'
+                          }`}
+                          placeholder="Enter your location"
+                          aria-required="true"
+                          aria-invalid={errors.location ? 'true' : 'false'}
+                        />
+                        {errors.location && (
+                          <p className="mt-1 text-sm text-red-600" role="alert">
+                            {errors.location}
+                          </p>
+                        )}
+                      </div>
+                      <div>
+                        <label htmlFor="industry" className="block text-sm font-medium text-gray-700 mb-2">
+                          Industry *
+                        </label>
+                        <div className="relative" ref={industryRef}>
+                          <button
+                            type="button"
+                            onClick={() => {
+                              setWasEditing(true);
+                              setIsIndustryOpen(!isIndustryOpen);
+                            }}
+                            className={`flex items-center justify-between w-full px-4 py-3 bg-gray-100 border rounded-xl text-left hover:bg-gray-200 transition-colors cursor-pointer ${
+                              errors.industry ? 'border-red-300' : 'border-gray-200'
+                            } ${formData.industry ? 'text-black' : 'text-gray-700 hover:text-black'}`}
+                            aria-required="true"
+                            aria-invalid={errors.industry ? 'true' : 'false'}
+                            aria-describedby={errors.industry ? 'industry-error' : undefined}
+                            aria-expanded={isIndustryOpen}
+                          >
+                            <span className="text-sm font-medium">
+                              {formData.industry 
+                                ? formData.industry.charAt(0).toUpperCase() + formData.industry.slice(1).replace(/-/g, ' ')
+                                : 'Select your industry'}
+                            </span>
+                            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                            </svg>
+                          </button>
+
+                          {isIndustryOpen && (
+                            <div 
+                              className="absolute right-0 left-0 mt-2 bg-white border border-gray-200 rounded-xl shadow-lg z-50 animate-fade-in max-h-60 overflow-y-auto"
+                              role="menu"
+                              aria-orientation="vertical"
+                            >
+                              <div className="py-2">
+                                {['technology', 'healthcare', 'finance', 'retail', 'real-estate', 'education', 'manufacturing', 'hospitality', 'consulting', 'marketing', 'legal', 'other'].map((industry) => (
+                                  <button
+                                    key={industry}
+                                    type="button"
+                                    onClick={() => updateField('industry', industry)}
+                                    className={`w-full text-left px-4 py-3 text-sm hover:bg-gray-50 transition-colors cursor-pointer ${
+                                      formData.industry === industry ? 'text-black bg-gray-50' : 'text-gray-600'
+                                    }`}
+                                    role="menuitem"
+                                  >
+                                    {industry === 'real-estate' ? 'Real Estate' : 
+                                     industry === 'retail' ? 'Retail & E-commerce' :
+                                     industry === 'finance' ? 'Finance & Banking' :
+                                     industry === 'hospitality' ? 'Hospitality & Tourism' :
+                                     industry === 'marketing' ? 'Marketing & Advertising' :
+                                     industry === 'legal' ? 'Legal Services' :
+                                     industry === 'technology' ? 'Technology' :
+                                     industry === 'healthcare' ? 'Healthcare' :
+                                     industry === 'education' ? 'Education' :
+                                     industry === 'manufacturing' ? 'Manufacturing' :
+                                     industry === 'consulting' ? 'Consulting' :
+                                     industry.charAt(0).toUpperCase() + industry.slice(1)}
+                                  </button>
+                                ))}
+                              </div>
+                            </div>
+                          )}
+                        </div>
+                        {errors.industry && (
+                          <p id="industry-error" className="mt-1 text-sm text-red-600" role="alert">
+                            {errors.industry}
+                          </p>
+                        )}
+                      </div>
                     </div>
                     <div className="flex gap-3 mt-6">
                       <button
@@ -308,7 +442,9 @@ export default function SettingsModal({
                             name: currentName, 
                             email: 'user@example.com', 
                             company: 'Your Company',
-                            portfolio: 'https://yourportfolio.com'
+                            portfolio: 'https://yourportfolio.com',
+                            location: '',
+                            industry: ''
                           });
                           setErrors({});
                         }}
