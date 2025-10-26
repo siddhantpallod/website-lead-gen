@@ -4,7 +4,7 @@ import { getFirestore } from 'firebase/firestore';
 import { getAuth } from 'firebase/auth';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBfJQRSm2kDKxwaYjtjTyOFiQ3UzFPIwAw",
+  apiKey: "Enter your API Key here",
   authDomain: "leadgenai-d2449.firebaseapp.com",
   projectId: "leadgenai-d2449",
   storageBucket: "leadgenai-d2449.firebasestorage.app",
