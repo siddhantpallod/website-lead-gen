@@ -33,7 +33,7 @@ export default function Landing() {
                 />
               </h1>
               <p className="text-2xl text-gray-600 leading-relaxed text-center">
-                Just look at it go!
+                Do Nothing, Get Results.
               </p>
 
               {/* Buttons */}
@@ -68,34 +68,27 @@ export default function Landing() {
                 <Card>
                   <div className="p-8 text-center space-y-6 flex flex-col items-center justify-center h-full">
                     <div className="flex items-center space-x-3">
-                      <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
-                      </svg>
-                      <h3 className="text-2xl font-bold text-white">Reliable</h3>
+                      <h3 className="text-4xl font-bold text-white">😴💤</h3>
                     </div>
-                    <div className="text-6xl font-bold text-white">1</div>
+                    <div className="text-4xl font-bold text-white">Find businessess while you sleep</div>
                   </div>
                 </Card>
 
                 <Card>
                   <div className="p-8 text-center space-y-6 flex flex-col items-center justify-center h-full">
                     <div className="flex items-center space-x-3">
-                      <div className="w-8 h-8 bg-white rounded-full" aria-hidden="true"></div>
-                      <h3 className="text-2xl font-bold text-white">Smooth</h3>
+                      <h3 className="text-4xl font-bold text-white">🎨</h3>
                     </div>
-                    <div className="text-6xl font-bold text-white">2</div>
+                    <div className="text-4xl font-bold text-white">Make UIs on the fly</div>
                   </div>
                 </Card>
 
                 <Card>
                   <div className="p-8 text-center space-y-6 flex flex-col items-center justify-center h-full">
                     <div className="flex items-center space-x-3">
-                      <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
-                      </svg>
-                      <h3 className="text-2xl font-bold text-white">Customizable</h3>
+                      <h3 className="text-4xl font-bold text-white">🤖</h3>
                     </div>
-                    <div className="text-6xl font-bold text-white">3</div>
+                    <div className="text-4xl font-bold text-white">Your personal 24/7 marketing assistant</div>
                   </div>
                 </Card>
               </CardSwap>

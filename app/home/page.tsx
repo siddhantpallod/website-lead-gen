@@ -1,7 +1,7 @@
 'use client';
 
-import { useState, useRef, useCallback, useMemo } from 'react';
-import type { Lead, LeadStatus } from '@/types';
+import { useState, useRef, useCallback, useMemo, useEffect } from 'react';
+import type { Lead, LeadStatus, OnboardingFormData } from '@/types';
 import { SAMPLE_LEADS, STATUS_COLORS, STATUS_ORDER } from '@/lib/constants';
 import { useModalOutside, useDropdownOutside } from '@/lib/hooks/useClickOutside';
 import { useKeyboard } from '@/lib/hooks/useKeyboard';
@@ -9,7 +9,7 @@ import SettingsModal from '@/components/SettingsModal';
 import { useRouter } from 'next/navigation';
 
 export default function Home() {
-  const [name, setName] = useState('Taher'); // This would come from user authentication
+  const [userData, setUserData] = useState<OnboardingFormData | null>(null);
   const [selectedLead, setSelectedLead] = useState<Lead | null>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isSettingsOpen, setIsSettingsOpen] = useState(false);
@@ -20,6 +20,23 @@ export default function Home() {
   const [isEditingEmail, setIsEditingEmail] = useState(false);
   const [editedEmail, setEditedEmail] = useState('');
   const router = useRouter();
+
+  // Load user data from localStorage on mount
+  useEffect(() => {
+    const savedUserData = localStorage.getItem('userData');
+    if (savedUserData) {
+      try {
+        const parsedData = JSON.parse(savedUserData);
+        setUserData(parsedData);
+      } catch (error) {
+        console.error('Error parsing saved user data:', error);
+        localStorage.removeItem('userData');
+      }
+    }
+  }, []);
+
+  // Get name from user data, fallback to default
+  const name = userData?.name || 'User';
 
   const modalRef = useRef<HTMLDivElement | null>(null);
   const filterRef = useRef<HTMLDivElement | null>(null);
@@ -74,8 +91,10 @@ export default function Home() {
   }, []);
 
   const handleProfileUpdate = useCallback((data: { name: string; email: string; company: string; portfolio: string; location: string; industry: string }) => {
-    setName(data.name);
-    // In a real app, you would save this to your backend
+    // Update local state
+    setUserData(data);
+    // Save to localStorage
+    localStorage.setItem('userData', JSON.stringify(data));
     console.log('Profile updated:', data);
     setIsSettingsOpen(false);
   }, []);
@@ -99,7 +118,7 @@ export default function Home() {
         const matchesStatus = filterStatus === 'all' || lead.status === filterStatus;
         const matchesSearch = searchQuery === '' ||
           lead.businessName.toLowerCase().includes(searchQuery.toLowerCase()) ||
-          lead.website.toLowerCase().includes(searchQuery.toLowerCase()) ||
+          (lead.website && lead.website !== 'No website' && lead.website.toLowerCase().includes(searchQuery.toLowerCase())) ||
           lead.description.toLowerCase().includes(searchQuery.toLowerCase());
         return matchesStatus && matchesSearch;
       })
@@ -271,7 +290,9 @@ export default function Home() {
                         <h3 className="text-lg font-medium text-black">
                           {lead.businessName}
                         </h3>
-                        <p className="text-gray-500 text-sm">{lead.website}</p>
+                        <p className="text-gray-500 text-sm">
+                          {lead.website && lead.website !== 'No website' ? lead.website : 'No website available'}
+                        </p>
                       </div>
                     </div>
                     <div className="flex items-center">
@@ -326,7 +347,18 @@ export default function Home() {
                 <div className="space-y-8">
                   <div>
                     <h3 className="text-lg font-semibold text-black mb-3">Website</h3>
-                    <p className="text-gray-600">{selectedLead.website}</p>
+                    {selectedLead.website && selectedLead.website !== 'No website' ? (
+                      <a
+                        href={selectedLead.website.startsWith('http') ? selectedLead.website : `https://${selectedLead.website}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-blue-600 hover:text-blue-800 underline transition-colors"
+                      >
+                        {selectedLead.website}
+                      </a>
+                    ) : (
+                      <p className="text-gray-600">No website available</p>
+                    )}
                   </div>
 
                   <div>
@@ -359,7 +391,7 @@ export default function Home() {
                     <h3 className="text-lg font-semibold text-black mb-3">Prototype</h3>
                     <div className="flex items-center space-x-4">
                       <a
-                        href={`https://prototype.example.com/${selectedLead.website}`}
+                        href={selectedLead.prototypeLink}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex items-center space-x-2 px-4 py-2 bg-blue-50 text-blue-700 border border-blue-200 rounded-xl hover:bg-blue-100 transition-colors cursor-pointer"
@@ -438,7 +470,7 @@ export default function Home() {
         <SettingsModal
           isOpen={isSettingsOpen}
           onClose={() => setIsSettingsOpen(false)}
-          currentName={name}
+          userData={userData}
           onUpdate={handleProfileUpdate}
           onLogout={handleLogout}
           onDeleteAccount={handleDeleteAccount}

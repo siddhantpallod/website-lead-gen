@@ -7,6 +7,7 @@ export interface Lead {
   status: LeadStatus;
   lastChecked: string;
   draftedEmail: string;
+  prototypeLink: string;
 }
 
 export type LeadStatus = 'new' | 'contacted' | 'responded' | 'converted';

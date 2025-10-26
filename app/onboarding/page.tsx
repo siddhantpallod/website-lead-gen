@@ -74,6 +74,8 @@ export default function Onboarding() {
       }
       setCurrentStep(currentStep + 1);
     } else {
+      // Save user data to localStorage when onboarding is completed
+      localStorage.setItem('userData', JSON.stringify(formData));
       router.push('/home');
     }
   };

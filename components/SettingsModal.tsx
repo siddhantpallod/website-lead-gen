@@ -1,13 +1,13 @@
 'use client';
 
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { useModalOutside, useDropdownOutside } from '@/lib/hooks/useClickOutside';
 import { useKeyboard } from '@/lib/hooks/useKeyboard';
 
 interface SettingsModalProps {
   isOpen: boolean;
   onClose: () => void;
-  currentName: string;
+  userData: { name: string; email: string; company: string; portfolio: string; location: string; industry: string } | null;
   onUpdate: (data: { name: string; email: string; company: string; portfolio: string; location: string; industry: string }) => void;
   onLogout: () => void;
   onDeleteAccount: () => void;
@@ -16,7 +16,7 @@ interface SettingsModalProps {
 export default function SettingsModal({
   isOpen,
   onClose,
-  currentName,
+  userData,
   onUpdate,
   onLogout,
   onDeleteAccount
@@ -24,12 +24,12 @@ export default function SettingsModal({
   const [activeTab, setActiveTab] = useState<'profile' | 'danger'>('profile');
   const [isEditingProfile, setIsEditingProfile] = useState(false);
   const [formData, setFormData] = useState({
-    name: currentName,
-    email: 'user@example.com',
-    company: 'Your Company',
-    portfolio: 'https://yourportfolio.com',
-    location: '',
-    industry: ''
+    name: userData?.name || 'User',
+    email: userData?.email || 'user@example.com',
+    company: userData?.company || 'Your Company',
+    portfolio: userData?.portfolio || 'https://yourportfolio.com',
+    location: userData?.location || '',
+    industry: userData?.industry || ''
   });
   const [errors, setErrors] = useState<{ [key: string]: string }>({});
   const [isIndustryOpen, setIsIndustryOpen] = useState(false);
@@ -37,6 +37,20 @@ export default function SettingsModal({
 
   const modalRef = useRef<HTMLDivElement | null>(null);
   const industryRef = useRef<HTMLDivElement | null>(null);
+
+  // Update form data when userData changes
+  useEffect(() => {
+    if (userData) {
+      setFormData({
+        name: userData.name || 'User',
+        email: userData.email || 'user@example.com',
+        company: userData.company || 'Your Company',
+        portfolio: userData.portfolio || 'https://yourportfolio.com',
+        location: userData.location || '',
+        industry: userData.industry || ''
+      });
+    }
+  }, [userData]);
 
   useDropdownOutside(industryRef, () => {
     if (wasEditing) {
@@ -440,13 +454,13 @@ export default function SettingsModal({
                       <button
                         onClick={() => {
                           setIsEditingProfile(false);
-                          setFormData({ 
-                            name: currentName, 
-                            email: 'user@example.com', 
-                            company: 'Your Company',
-                            portfolio: 'https://yourportfolio.com',
-                            location: '',
-                            industry: ''
+                          setFormData({
+                            name: userData?.name || 'User',
+                            email: userData?.email || 'user@example.com',
+                            company: userData?.company || 'Your Company',
+                            portfolio: userData?.portfolio || 'https://yourportfolio.com',
+                            location: userData?.location || '',
+                            industry: userData?.industry || ''
                           });
                           setErrors({});
                         }}
