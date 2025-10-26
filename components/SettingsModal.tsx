@@ -113,7 +113,7 @@ export default function SettingsModal({
           </h2>
           <button
           onClick={onClose}
-          className="p-2 text-gray-400 hover:text-black transition-colors"
+          className="p-2 text-gray-400 hover:text-black transition-colors cursor-pointer"
           aria-label="Close settings"
         >
           <svg
@@ -139,7 +139,7 @@ export default function SettingsModal({
         <div className="max-w-4xl w-full mx-auto flex space-x-4">
           <button
             onClick={() => setActiveTab('profile')}
-            className={`py-4 px-2 border-b-2 transition-colors font-medium ${
+            className={`py-4 px-2 border-b-2 transition-colors font-medium cursor-pointer ${
               activeTab === 'profile'
                 ? 'border-black text-black'
                 : 'border-transparent text-gray-500 hover:text-black'
@@ -149,7 +149,7 @@ export default function SettingsModal({
           </button>
           <button
             onClick={() => setActiveTab('danger')}
-            className={`py-4 px-2 border-b-2 transition-colors font-medium ${
+            className={`py-4 px-2 border-b-2 transition-colors font-medium cursor-pointer ${
               activeTab === 'danger'
                 ? 'border-red-500 text-red-600'
                 : 'border-transparent text-gray-500 hover:text-red-600'
@@ -204,7 +204,7 @@ export default function SettingsModal({
                     </div>
                     <button
                       onClick={() => setIsEditingProfile(true)}
-                      className="mt-6 w-full px-6 py-3 bg-black text-white font-medium rounded-xl hover:bg-gray-800 transition-all duration-200"
+                      className="mt-6 w-full px-6 py-3 bg-black text-white font-medium rounded-xl hover:bg-gray-800 transition-all duration-200 cursor-pointer"
                     >
                       Edit Profile
                     </button>
@@ -312,13 +312,13 @@ export default function SettingsModal({
                           });
                           setErrors({});
                         }}
-                        className="flex-1 px-6 py-3 bg-gray-100 text-black font-medium rounded-xl hover:bg-gray-200 transition-all duration-200"
+                        className="flex-1 px-6 py-3 bg-gray-100 text-black font-medium rounded-xl hover:bg-gray-200 transition-all duration-200 cursor-pointer"
                       >
                         Cancel
                       </button>
                       <button
                         onClick={handleSave}
-                        className="flex-1 px-6 py-3 bg-black text-white font-medium rounded-xl hover:bg-gray-800 transition-all duration-200"
+                        className="flex-1 px-6 py-3 bg-black text-white font-medium rounded-xl hover:bg-gray-800 transition-all duration-200 cursor-pointer"
                       >
                         Save Changes
                       </button>
@@ -334,7 +334,7 @@ export default function SettingsModal({
                 <p className="text-gray-600 mb-4">Sign out of your account. You can always log back in later.</p>
                 <button
                   onClick={onLogout}
-                  className="px-6 py-3 bg-gray-100 text-gray-900 border border-gray-300 font-medium rounded-xl hover:bg-gray-200 transition-all duration-200"
+                  className="px-6 py-3 bg-gray-100 text-gray-900 border border-gray-300 font-medium rounded-xl hover:bg-gray-200 transition-all duration-200 cursor-pointer"
                 >
                   Log Out
                 </button>
@@ -347,7 +347,7 @@ export default function SettingsModal({
                 </p>
                 <button
                   onClick={handleDelete}
-                  className="px-6 py-3 bg-red-50 text-red-600 border-2 border-red-300 font-medium rounded-xl hover:bg-red-100 transition-all duration-200"
+                  className="px-6 py-3 bg-red-50 text-red-600 border-2 border-red-300 font-medium rounded-xl hover:bg-red-100 transition-all duration-200 cursor-pointer"
                 >
                   Delete Account
                 </button>

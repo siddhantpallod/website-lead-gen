@@ -16,7 +16,9 @@ export default function Home() {
   const [filterStatus, setFilterStatus] = useState<string>('all');
   const [isFilterOpen, setIsFilterOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
-  const [leads] = useState<Lead[]>(SAMPLE_LEADS);
+  const [leads, setLeads] = useState<Lead[]>(SAMPLE_LEADS);
+  const [isEditingEmail, setIsEditingEmail] = useState(false);
+  const [editedEmail, setEditedEmail] = useState('');
   const router = useRouter();
 
   const modalRef = useRef<HTMLDivElement | null>(null);
@@ -39,8 +41,33 @@ export default function Home() {
 
   const openModal = useCallback((lead: Lead) => {
     setSelectedLead(lead);
+    setIsEditingEmail(false);
+    setEditedEmail(lead.draftedEmail);
     setIsModalOpen(true);
   }, []);
+
+  const handleEditEmail = useCallback(() => {
+    setIsEditingEmail(true);
+  }, []);
+
+  const handleSaveEmail = useCallback(() => {
+    if (selectedLead) {
+      setLeads(prev => prev.map(lead => 
+        lead.id === selectedLead.id 
+          ? { ...lead, draftedEmail: editedEmail }
+          : lead
+      ));
+      setSelectedLead({ ...selectedLead, draftedEmail: editedEmail });
+      setIsEditingEmail(false);
+    }
+  }, [selectedLead, editedEmail]);
+
+  const handleCancelEditEmail = useCallback(() => {
+    if (selectedLead) {
+      setEditedEmail(selectedLead.draftedEmail);
+      setIsEditingEmail(false);
+    }
+  }, [selectedLead]);
 
   const getStatusColor = useCallback((status: string) => {
     return STATUS_COLORS[status as LeadStatus] || 'bg-gray-200 text-gray-900';
@@ -104,7 +131,7 @@ export default function Home() {
           </div>
           <nav className="flex items-center space-x-3" aria-label="User actions">
             <button 
-              className="p-3 text-gray-400 hover:text-black transition-all duration-200 hover:rotate-360"
+              className="p-3 text-gray-400 hover:text-black transition-all duration-200 hover:rotate-360 cursor-pointer"
               aria-label="View calendar"
             >
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -113,7 +140,7 @@ export default function Home() {
             </button>
             <button 
               onClick={() => setIsSettingsOpen(true)}
-              className="p-3 text-gray-400 hover:text-black transition-all duration-200 hover:rotate-180"
+              className="p-3 text-gray-400 hover:text-black transition-all duration-200 hover:rotate-180 cursor-pointer"
               aria-label="Open settings"
             >
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -174,7 +201,7 @@ export default function Home() {
             <div className="relative" ref={filterRef}>
               <button
                 onClick={() => setIsFilterOpen(!isFilterOpen)}
-                className="flex items-center space-x-2 px-4 py-2 bg-gray-100 border border-gray-200 rounded-xl hover:bg-gray-200 transition-colors text-gray-700 hover:text-black"
+                className="flex items-center space-x-2 px-4 py-2 bg-gray-100 border border-gray-200 rounded-xl hover:bg-gray-200 transition-colors text-gray-700 hover:text-black cursor-pointer"
                 aria-label="Filter leads"
                 aria-expanded={isFilterOpen}
               >
@@ -198,7 +225,7 @@ export default function Home() {
                       <button
                         key={status}
                         onClick={() => handleFilterChange(status)}
-                        className={`w-full text-left px-4 py-3 text-sm hover:bg-gray-50 transition-colors ${filterStatus === status ? 'text-black bg-gray-50' : 'text-gray-600'}`}
+                        className={`w-full text-left px-4 py-3 text-sm hover:bg-gray-50 transition-colors cursor-pointer ${filterStatus === status ? 'text-black bg-gray-50' : 'text-gray-600'}`}
                         role="menuitem"
                       >
                         {status === 'all' ? 'All Leads' : status.charAt(0).toUpperCase() + status.slice(1)}
@@ -276,7 +303,7 @@ export default function Home() {
                   <h2 id="modal-title" className="text-2xl font-semibold text-black">{selectedLead.businessName}</h2>
                   <button
                     onClick={closeModal}
-                    className="p-2 text-gray-400 hover:text-black transition-colors"
+                    className="p-2 text-gray-400 hover:text-black transition-colors cursor-pointer"
                     aria-label="Close modal"
                   >
                     <svg
@@ -335,14 +362,14 @@ export default function Home() {
                         href={`https://prototype.example.com/${selectedLead.website}`}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center space-x-2 px-4 py-2 bg-blue-50 text-blue-700 border border-blue-200 rounded-xl hover:bg-blue-100 transition-colors"
+                        className="flex items-center space-x-2 px-4 py-2 bg-blue-50 text-blue-700 border border-blue-200 rounded-xl hover:bg-blue-100 transition-colors cursor-pointer"
                       >
                         <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                         </svg>
                         <span className="text-sm font-medium">View Prototype</span>
                       </a>
-                      <button className="flex items-center space-x-2 px-4 py-2 bg-gray-100 text-gray-700 border border-gray-200 rounded-xl hover:bg-gray-200 transition-colors">
+                      <button className="flex items-center space-x-2 px-4 py-2 bg-gray-100 text-gray-700 border border-gray-200 rounded-xl hover:bg-gray-200 transition-colors cursor-pointer">
                         <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
                         </svg>
@@ -352,14 +379,52 @@ export default function Home() {
                   </div>
 
                   <div>
-                    <h3 className="text-lg font-semibold text-black mb-3">Drafted Email</h3>
-                    <div className="bg-gray-50 p-6 rounded-xl border border-gray-200">
-                      <pre className="text-gray-700 text-sm whitespace-pre-wrap font-mono leading-relaxed">{selectedLead.draftedEmail}</pre>
+                    <div className="flex items-center justify-between mb-3">
+                      <h3 className="text-lg font-semibold text-black">Drafted Email</h3>
+                      {!isEditingEmail && (
+                        <button
+                          onClick={handleEditEmail}
+                          className="flex items-center space-x-2 px-4 py-2 bg-gray-100 text-gray-700 border border-gray-200 rounded-xl hover:bg-gray-200 transition-colors cursor-pointer"
+                        >
+                          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+                          </svg>
+                          <span className="text-sm font-medium">Edit</span>
+                        </button>
+                      )}
                     </div>
+                    {isEditingEmail ? (
+                      <div className="space-y-3">
+                        <textarea
+                          value={editedEmail}
+                          onChange={(e) => setEditedEmail(e.target.value)}
+                          className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl text-gray-700 font-mono text-sm leading-relaxed focus:outline-none focus:border-black focus:bg-white transition-all duration-200 resize-none min-h-[200px]"
+                          rows={10}
+                        />
+                        <div className="flex gap-3">
+                          <button
+                            onClick={handleSaveEmail}
+                            className="flex-1 px-6 py-3 bg-black text-white font-medium rounded-xl hover:bg-gray-800 transition-all duration-200 cursor-pointer"
+                          >
+                            Save Changes
+                          </button>
+                          <button
+                            onClick={handleCancelEditEmail}
+                            className="flex-1 px-6 py-3 bg-gray-100 text-black font-medium rounded-xl hover:bg-gray-200 transition-all duration-200 cursor-pointer"
+                          >
+                            Cancel
+                          </button>
+                        </div>
+                      </div>
+                    ) : (
+                      <div className="bg-gray-50 p-6 rounded-xl border border-gray-200">
+                        <pre className="text-gray-700 text-sm whitespace-pre-wrap font-mono leading-relaxed">{selectedLead.draftedEmail}</pre>
+                      </div>
+                    )}
                   </div>
 
                   <div className="flex justify-center pt-4">
-                    <button className="px-8 py-3 bg-black text-white font-medium rounded-xl hover:bg-gray-800 transition-all duration-200">
+                    <button className="px-8 py-3 bg-black text-white font-medium rounded-xl hover:bg-gray-800 transition-all duration-200 cursor-pointer">
                       Send Email
                     </button>
                   </div>
