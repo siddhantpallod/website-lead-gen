@@ -29,7 +29,7 @@ export default function SettingsModal({
     company: 'Your Company',
     portfolio: 'https://yourportfolio.com'
   });
-  const [errors, setErrors] = useState<{ [key: string]: string }>({});
+  const [errors, setErrors] = useState<Record<string, string | undefined>>({});
 
   const modalRef = useRef<HTMLDivElement | null>(null);
 
